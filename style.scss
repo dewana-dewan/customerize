@@ -1,0 +1,179 @@
+@import "reset.css";
+body {
+    background-color: #374057;
+}
+
+#c {
+    border: 1px solid white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#target{
+    @extend #c;
+    height: 400px;
+    
+}
+
+#bgimage {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -99999;
+    height: 100vh;
+}
+
+.header {
+    font-family: Metropolis-SemiBold;
+    font-size: 24px;
+    color: #FFFFFF;
+    letter-spacing: 6px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 24px;
+}
+
+.content {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 12vw;
+    margin-left: 15vw;
+    margin-right: 5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .r0 {
+        display: flex;
+        flex-direction: column;
+        .textcntrl {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            button{
+padding: 12px;
+                background-color: #2A3041;
+                border-radius: 3px;
+                border: none;
+                cursor: pointer;
+font-family: Metropolis-SemiBold;
+font-size: 16px;
+color: #FFFFFF;
+letter-spacing: 0;
+            }
+            .font {
+                margin: 16px 0;
+                background-color: transparent!important;
+                border: 0;
+                outline: 0;
+                font-family: Metropolis-Medium;
+                font-size: 16px;
+                color: #FFFFFF;
+                letter-spacing: -0.5px;
+                border-bottom: 1px solid #979797;
+                border-radius: 0px;
+                #rob {
+                    font-family: 'Roboto';
+                }
+                #lob {
+                    font-family: 'Lobster';
+                }
+                #air {
+                    font-family: 'Airstrike';
+                }
+                #ac {
+                    font-family: 'American Captain';
+                }
+            }
+            input[type="text"] {
+                margin: 16px 0;
+                background-color: transparent;
+                border: 0;
+                outline: 0;
+                font-family: Metropolis-Regular;
+                font-size: 14px;
+                color: #fff;
+                border-bottom: 1px solid #979797;
+            }
+            .colors {
+                display: flex;
+                flex-direction: column;
+                .ind {
+                    display: flex;
+                    flex-direction: row;
+                    margin: 16px 0 16px 0;
+                    justify-content: space-between;
+                    div {
+                        box-shadow: 2px 3px 3px 0 rgba(26, 34, 54, 0.25);
+                        border-radius: 2px;
+                        height: 24px;
+                        width: 24px;
+                        cursor: pointer;
+                    }
+                    #white {
+                        background-color: white;
+                    }
+                    #black {
+                        background-color: black;
+                    }
+                    #blue {
+                        background-color: #4A90E2;
+                    }
+                    #red {
+                        background-color: #D0021B;
+                    }
+                    #purple {
+                        background-color: #9013FE;
+                    }
+                    #yellow {
+                        background-color: #F8E71C;
+                    }
+                }
+                input {
+                    width: 100%;
+                    border: none;
+                    outline: none;
+                    background-color: transparent;
+                    margin: 0 0 16px 0;
+                }
+            }
+        }
+        label {
+            img {
+                margin-right: 8px;
+                vertical-align: baseline;
+            }
+            text-transform: uppercase;
+            border-radius: 3px;
+            cursor: pointer;
+            padding: 12px;
+            background-color: #2A3041;
+            font-family: Metropolis-SemiBold;
+            font-size: 16px;
+            color: #FFFFFF;
+            letter-spacing: 0;
+        }
+    }
+    .r1 {
+        width: 400px;
+        height: 400px;
+    }
+    .r2 {
+        .confirm {
+            cursor: pointer;
+            border: none;
+            border-radius: 3px;
+            text-transform: uppercase;
+            background-color: white;
+            padding: 12px;
+            font-family: Metropolis-Bold;
+            font-size: 20px;
+            color: #1284F6;
+            letter-spacing: 0.62px;
+        }
+    }
+}
