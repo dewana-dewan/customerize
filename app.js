@@ -91,10 +91,29 @@ var background = document.getElementById('mainbg');
 let scale = 400 / background.width;
 var bgInstance = new fabric.Image(background, {
     left: 0,
-    top: 0
+    top: 0,
+    lockMovementX: true,
+    lockMovementY: true,
+    hoverCursor: 'arrow'
 });
 bgInstance.set({
     scaleX: scale,
     scaleY: scale
 });
 canvas.add(bgInstance);
+
+//add the subordinate images
+
+
+/*var ipimage = document.getElementById('preview');
+
+let scale2 = 400 / ipimage.width;
+var ipInstance = new fabric.Image(ipimage, {
+    left: 10,
+    top: 10
+});
+ipInstance.set({
+    scaleX: scale2,
+    scaleY: scale2
+});
+canvas.add(ipInstance);*/
