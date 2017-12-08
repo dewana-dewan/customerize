@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "Hello World",
+  "version": "2.1",
+  "icons": {
+    "16": "hello_world.png"
+  },
+  "background": {
+    "scripts": ["bg.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["main.js", "assets/jquery-3.2.1.min.js"],
+      "css": ["styles/styling.css"],
+      "run_at": "document_start"
+      // "all_frames": true
+    }
+  ],
+  "web_accessible_resources": [
+    "assets/index.html"
+  ],
+  "browser_action": {
+    "default_icon": "hello_world.png",
+    "default_popup": "popup.html"
+   },
+   "permissions": ["https://*/*", "https://*/", "contextMenus", "activeTab"]
+}
