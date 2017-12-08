@@ -17,7 +17,16 @@ body {
 #target {
   height: 400px; }
 
-/* line 22, /Users/Abhishek/Playground/scripton/customerize/style.scss */
+/* line 21, /Users/Abhishek/Playground/scripton/customerize/style.scss */
+#mainbg {
+  display: none; }
+
+/* line 24, /Users/Abhishek/Playground/scripton/customerize/style.scss */
+#preview {
+  height: 100px;
+  display: none; }
+
+/* line 28, /Users/Abhishek/Playground/scripton/customerize/style.scss */
 #bgimage {
   position: absolute;
   right: 0;
@@ -25,7 +34,7 @@ body {
   z-index: -99999;
   height: 100vh; }
 
-/* line 30, /Users/Abhishek/Playground/scripton/customerize/style.scss */
+/* line 36, /Users/Abhishek/Playground/scripton/customerize/style.scss */
 .header {
   font-family: Metropolis-SemiBold;
   font-size: 24px;
@@ -35,7 +44,7 @@ body {
   text-transform: uppercase;
   margin-top: 24px; }
 
-/* line 40, /Users/Abhishek/Playground/scripton/customerize/style.scss */
+/* line 46, /Users/Abhishek/Playground/scripton/customerize/style.scss */
 .content {
   text-align: center;
   margin: 0 auto;
@@ -46,16 +55,16 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center; }
-  /* line 50, /Users/Abhishek/Playground/scripton/customerize/style.scss */
+  /* line 56, /Users/Abhishek/Playground/scripton/customerize/style.scss */
   .content .r0 {
     display: flex;
     flex-direction: column; }
-    /* line 53, /Users/Abhishek/Playground/scripton/customerize/style.scss */
+    /* line 59, /Users/Abhishek/Playground/scripton/customerize/style.scss */
     .content .r0 .textcntrl {
       text-align: center;
       display: flex;
       flex-direction: column; }
-      /* line 57, /Users/Abhishek/Playground/scripton/customerize/style.scss */
+      /* line 63, /Users/Abhishek/Playground/scripton/customerize/style.scss */
       .content .r0 .textcntrl button {
         padding: 12px;
         background-color: #2A3041;
@@ -66,7 +75,7 @@ body {
         font-size: 16px;
         color: #FFFFFF;
         letter-spacing: 0; }
-      /* line 68, /Users/Abhishek/Playground/scripton/customerize/style.scss */
+      /* line 74, /Users/Abhishek/Playground/scripton/customerize/style.scss */
       .content .r0 .textcntrl .font {
         margin: 16px 0;
         background-color: transparent !important;
@@ -78,19 +87,19 @@ body {
         letter-spacing: -0.5px;
         border-bottom: 1px solid #979797;
         border-radius: 0px; }
-        /* line 79, /Users/Abhishek/Playground/scripton/customerize/style.scss */
+        /* line 85, /Users/Abhishek/Playground/scripton/customerize/style.scss */
         .content .r0 .textcntrl .font #rob {
           font-family: 'Roboto'; }
-        /* line 82, /Users/Abhishek/Playground/scripton/customerize/style.scss */
+        /* line 88, /Users/Abhishek/Playground/scripton/customerize/style.scss */
         .content .r0 .textcntrl .font #lob {
           font-family: 'Lobster'; }
-        /* line 85, /Users/Abhishek/Playground/scripton/customerize/style.scss */
+        /* line 91, /Users/Abhishek/Playground/scripton/customerize/style.scss */
         .content .r0 .textcntrl .font #air {
           font-family: 'Airstrike'; }
-        /* line 88, /Users/Abhishek/Playground/scripton/customerize/style.scss */
+        /* line 94, /Users/Abhishek/Playground/scripton/customerize/style.scss */
         .content .r0 .textcntrl .font #ac {
           font-family: 'American Captain'; }
-      /* line 92, /Users/Abhishek/Playground/scripton/customerize/style.scss */
+      /* line 98, /Users/Abhishek/Playground/scripton/customerize/style.scss */
       .content .r0 .textcntrl input[type="text"] {
         margin: 16px 0;
         background-color: transparent;
@@ -100,49 +109,49 @@ body {
         font-size: 14px;
         color: #fff;
         border-bottom: 1px solid #979797; }
-      /* line 102, /Users/Abhishek/Playground/scripton/customerize/style.scss */
+      /* line 108, /Users/Abhishek/Playground/scripton/customerize/style.scss */
       .content .r0 .textcntrl .colors {
         display: flex;
         flex-direction: column; }
-        /* line 105, /Users/Abhishek/Playground/scripton/customerize/style.scss */
+        /* line 111, /Users/Abhishek/Playground/scripton/customerize/style.scss */
         .content .r0 .textcntrl .colors .ind {
           display: flex;
           flex-direction: row;
           margin: 16px 0 16px 0;
           justify-content: space-between; }
-          /* line 110, /Users/Abhishek/Playground/scripton/customerize/style.scss */
+          /* line 116, /Users/Abhishek/Playground/scripton/customerize/style.scss */
           .content .r0 .textcntrl .colors .ind div {
             box-shadow: 2px 3px 3px 0 rgba(26, 34, 54, 0.25);
             border-radius: 2px;
             height: 24px;
             width: 24px;
             cursor: pointer; }
-          /* line 117, /Users/Abhishek/Playground/scripton/customerize/style.scss */
+          /* line 123, /Users/Abhishek/Playground/scripton/customerize/style.scss */
           .content .r0 .textcntrl .colors .ind #white {
             background-color: white; }
-          /* line 120, /Users/Abhishek/Playground/scripton/customerize/style.scss */
+          /* line 126, /Users/Abhishek/Playground/scripton/customerize/style.scss */
           .content .r0 .textcntrl .colors .ind #black {
             background-color: black; }
-          /* line 123, /Users/Abhishek/Playground/scripton/customerize/style.scss */
+          /* line 129, /Users/Abhishek/Playground/scripton/customerize/style.scss */
           .content .r0 .textcntrl .colors .ind #blue {
             background-color: #4A90E2; }
-          /* line 126, /Users/Abhishek/Playground/scripton/customerize/style.scss */
+          /* line 132, /Users/Abhishek/Playground/scripton/customerize/style.scss */
           .content .r0 .textcntrl .colors .ind #red {
             background-color: #D0021B; }
-          /* line 129, /Users/Abhishek/Playground/scripton/customerize/style.scss */
+          /* line 135, /Users/Abhishek/Playground/scripton/customerize/style.scss */
           .content .r0 .textcntrl .colors .ind #purple {
             background-color: #9013FE; }
-          /* line 132, /Users/Abhishek/Playground/scripton/customerize/style.scss */
+          /* line 138, /Users/Abhishek/Playground/scripton/customerize/style.scss */
           .content .r0 .textcntrl .colors .ind #yellow {
             background-color: #F8E71C; }
-        /* line 136, /Users/Abhishek/Playground/scripton/customerize/style.scss */
+        /* line 142, /Users/Abhishek/Playground/scripton/customerize/style.scss */
         .content .r0 .textcntrl .colors input {
           width: 100%;
           border: none;
           outline: none;
           background-color: transparent;
           margin: 0 0 16px 0; }
-    /* line 145, /Users/Abhishek/Playground/scripton/customerize/style.scss */
+    /* line 151, /Users/Abhishek/Playground/scripton/customerize/style.scss */
     .content .r0 label {
       text-transform: uppercase;
       border-radius: 3px;
@@ -153,15 +162,15 @@ body {
       font-size: 16px;
       color: #FFFFFF;
       letter-spacing: 0; }
-      /* line 146, /Users/Abhishek/Playground/scripton/customerize/style.scss */
+      /* line 152, /Users/Abhishek/Playground/scripton/customerize/style.scss */
       .content .r0 label img {
         margin-right: 8px;
         vertical-align: baseline; }
-  /* line 161, /Users/Abhishek/Playground/scripton/customerize/style.scss */
+  /* line 167, /Users/Abhishek/Playground/scripton/customerize/style.scss */
   .content .r1 {
     width: 400px;
     height: 400px; }
-  /* line 166, /Users/Abhishek/Playground/scripton/customerize/style.scss */
+  /* line 172, /Users/Abhishek/Playground/scripton/customerize/style.scss */
   .content .r2 .confirm {
     cursor: pointer;
     border: none;

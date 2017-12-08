@@ -18,7 +18,13 @@ body {
     height: 400px;
     
 }
-
+#mainbg{
+    display: none;
+}
+#preview{
+    height: 100px;
+    display: none;
+}
 #bgimage {
     position: absolute;
     right: 0;
