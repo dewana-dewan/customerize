@@ -38,6 +38,74 @@ window.onload = function () {
 }
 //add the subordinate images
 
+function readFileCurved() {
+
+    if (this.files && this.files[0]) {
+
+        var FR = new FileReader();
+
+        FR.addEventListener("load", function (e) {
+            var imaaag = document.getElementById("preview").src = e.target.result;
+
+            var img = new Image();
+            img.src = e.target.result;
+
+
+            var cvs = canvas;
+            var context = cvs.getContext('2d');
+
+            console.log(img.height, img.width);
+            
+            img.onload = function() {
+
+                var x1 = img.width / 2;
+                var x2 = img.width;
+                var y1 = 20; // curve depth
+                var y2 = 0;
+
+                var eb = (y2*x1*x1 - y1*x2*x2) / (x2*x1*x1 - x1*x2*x2);
+                var ea = (y1 - eb*x1) / (x1*x1);
+
+                // variable used for the loop
+                var currentYOffset;
+
+                console.log(img.width, img.height, eb, ea);
+
+                for(var x = 0; x < img.width; x++) {
+
+                    // calculate the current offset
+                    currentYOffset = 120 + (ea * x * x) + eb * x;
+
+                    context.drawImage(img,x + 40,0,1,img.height,x + 40,currentYOffset,1,img.height);
+                }
+
+
+                var perspectiveImage = new Image();
+
+                perspectiveImage.onload = function() {
+                    perspectiveImage.src=cvs.toDataURL();
+                    console.log(cvs.toDataURL());
+
+                    fabric.Image.fromURL(perspectiveImage.src, function (myImg) {
+                        //i create an extra var for to change some image properties
+                        var img1 = myImg.set({
+                            left: 30,
+                            top: 50,
+                        });
+                        cvs.add(myImg);
+                    });
+                }
+            }
+
+
+
+
+            document.getElementById("preview").src = e.target.result;
+        });
+        FR.readAsDataURL(this.files[0]);
+    }
+}
+
 function readFile() {
 
     if (this.files && this.files[0]) {
@@ -61,7 +129,11 @@ function readFile() {
     }
 }
 
-document.getElementById("upimage").addEventListener("change", readFile);
+
+if(document.getElementById("upimage"))
+    document.getElementById("upimage").addEventListener("change", readFile);
+else
+    document.getElementById("upimage_mug").addEventListener("change", readFileCurved);
 
 
 //add text
@@ -80,7 +152,7 @@ for (i = 0; i < colors.length; i++) {
         textColor = temp;
     })
 }
-var addText = function () {
+var addText_mug = function () {
 
     let textValue = document.getElementById('textvalue').value;
     if (textValue === "") {
@@ -91,15 +163,6 @@ var addText = function () {
     let value = font.options[font.selectedIndex].value;
     fontName = font.options[font.selectedIndex].text;
 
-    // var mytext = new fabric.Text(textValue, {
-    //     left: 200,
-    //     top: 200,
-//         fontFamily: fontName,
-//         fill:         fill: textColor
-
-    // });
-
-    // canvas.add(mytext);
     document.getElementById('textvalue').value = " ";
 
     Example = new CurvedText(canvas, {
@@ -112,7 +175,34 @@ var addText = function () {
     canvas.bringToFront(Example.group);
 }
 
-document.getElementById('setText').addEventListener('click', addText);
+var addText = function () {
+
+     let textValue = document.getElementById('textvalue').value;
+     if (textValue === "") {
+         alert('Enter a text first');
+         return;
+     }
+     let font = document.getElementById("fonts");
+     let value = font.options[font.selectedIndex].value;
+     fontName = font.options[font.selectedIndex].text;
+
+     var mytext = new fabric.Text(textValue, {
+         left: 200,
+         top: 200,
+         fontFamily: fontName,
+         fill: textColor
+     });
+
+     canvas.add(mytext);
+     document.getElementById('textvalue').value = " ";
+
+}
+
+if(document.getElementById('setText'))
+    document.getElementById('setText').addEventListener('click', addText);
+else
+    document.getElementById('setText_mug').addEventListener('click', addText_mug);
+
 
 
 //deleting object
