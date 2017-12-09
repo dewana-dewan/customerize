@@ -1,9 +1,13 @@
 @import url(reset.css);
-/* line 2, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+/* line 3, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+:root {
+  --hue: 180deg; }
+
+/* line 8, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
 body {
   background-color: #374057; }
 
-/* line 6, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+/* line 12, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
 #c, #target,
 .canvas-container {
   position: absolute !important;
@@ -13,19 +17,19 @@ body {
   right: 0;
   margin: auto; }
 
-/* line 16, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+/* line 22, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
 #preview {
   display: none; }
 
-/* line 20, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+/* line 26, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
 #target {
   height: 400px; }
 
-/* line 25, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+/* line 31, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
 .hidden {
   display: none; }
 
-/* line 29, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+/* line 35, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
 #bgimage {
   position: absolute;
   right: 0;
@@ -33,7 +37,7 @@ body {
   z-index: -8888;
   height: 100vh; }
 
-/* line 37, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+/* line 43, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
 #deleteobj {
   margin: 16px 0;
   padding: 12px;
@@ -47,16 +51,16 @@ body {
   letter-spacing: 0;
   width: 100%; }
 
-/* line 51, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+/* line 57, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
 .header {
   display: flex;
   flex-direction: column;
   justify-content: center; }
-  /* line 54, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+  /* line 60, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
   .header img {
     align-self: center;
     margin-top: 16px; }
-  /* line 59, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+  /* line 65, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
   .header h1 {
     font-family: Metropolis-SemiBold;
     font-size: 24px;
@@ -66,7 +70,7 @@ body {
     text-transform: uppercase;
     margin-top: 16px; }
 
-/* line 70, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+/* line 76, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
 .content {
   text-align: center;
   margin: 0 auto;
@@ -77,16 +81,16 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center; }
-  /* line 80, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+  /* line 86, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
   .content .r0 {
     display: flex;
     flex-direction: column; }
-    /* line 83, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+    /* line 89, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
     .content .r0 .textcntrl {
       text-align: center;
       display: flex;
       flex-direction: column; }
-      /* line 87, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+      /* line 93, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
       .content .r0 .textcntrl button {
         padding: 12px;
         border-radius: 3px;
@@ -98,7 +102,7 @@ body {
         color: white;
         letter-spacing: 0;
         width: 100%; }
-      /* line 99, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+      /* line 105, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
       .content .r0 .textcntrl .font {
         margin: 16px 0;
         background-color: transparent !important;
@@ -110,19 +114,19 @@ body {
         letter-spacing: -0.5px;
         border-bottom: 1px solid #979797;
         border-radius: 0px; }
-        /* line 110, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+        /* line 116, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
         .content .r0 .textcntrl .font #rob {
           font-family: 'Roboto'; }
-        /* line 113, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+        /* line 119, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
         .content .r0 .textcntrl .font #lob {
           font-family: 'Lobster'; }
-        /* line 116, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+        /* line 122, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
         .content .r0 .textcntrl .font #air {
           font-family: 'Airstrike'; }
-        /* line 119, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+        /* line 125, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
         .content .r0 .textcntrl .font #ac {
           font-family: 'American Captain'; }
-      /* line 123, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+      /* line 129, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
       .content .r0 .textcntrl input[type="text"] {
         margin: 16px 0;
         background-color: transparent;
@@ -132,49 +136,49 @@ body {
         font-size: 14px;
         color: #fff;
         border-bottom: 1px solid #979797; }
-      /* line 133, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+      /* line 139, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
       .content .r0 .textcntrl .colors {
         display: flex;
         flex-direction: column; }
-        /* line 136, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+        /* line 142, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
         .content .r0 .textcntrl .colors .ind {
           display: flex;
           flex-direction: row;
           margin: 16px 0 16px 0;
           justify-content: space-between; }
-          /* line 141, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+          /* line 147, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
           .content .r0 .textcntrl .colors .ind div {
             box-shadow: 2px 3px 3px 0 rgba(26, 34, 54, 0.25);
             border-radius: 2px;
             height: 24px;
             width: 24px;
             cursor: pointer; }
-          /* line 148, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+          /* line 154, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
           .content .r0 .textcntrl .colors .ind #fff {
             background-color: white; }
-          /* line 151, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+          /* line 157, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
           .content .r0 .textcntrl .colors .ind .blackcolor {
             background-color: black; }
-          /* line 154, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+          /* line 160, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
           .content .r0 .textcntrl .colors .ind .bluecolor {
             background-color: #4A90E2; }
-          /* line 157, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+          /* line 163, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
           .content .r0 .textcntrl .colors .ind #D0021B {
             background-color: #D0021B; }
-          /* line 160, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+          /* line 166, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
           .content .r0 .textcntrl .colors .ind .purplecolor {
             background-color: #9013FE; }
-          /* line 163, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+          /* line 169, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
           .content .r0 .textcntrl .colors .ind #F8E71C {
             background-color: #F8E71C; }
-        /* line 167, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+        /* line 173, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
         .content .r0 .textcntrl .colors input {
           width: 100%;
           border: none;
           outline: none;
           background-color: transparent;
           margin: 0 0 16px 0; }
-    /* line 176, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+    /* line 182, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
     .content .r0 label {
       text-transform: uppercase;
       border-radius: 3px;
@@ -185,15 +189,15 @@ body {
       font-size: 16px;
       color: #FFFFFF;
       letter-spacing: 0; }
-      /* line 177, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+      /* line 183, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
       .content .r0 label img {
         margin-right: 8px;
         vertical-align: baseline; }
-  /* line 192, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+  /* line 198, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
   .content .r1 {
     width: 400px;
     height: 400px; }
-  /* line 197, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+  /* line 203, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
   .content .r2 .confirm {
     cursor: pointer;
     border: none;
@@ -205,5 +209,122 @@ body {
     font-size: 20px;
     color: #1284F6;
     letter-spacing: 0.62px; }
+
+/* line 220, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+#mug {
+  filter: hue-rotate(var(--hue));
+  background: white;
+  padding: 24px; }
+
+/* line 227, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+#cntrl .range {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: absolute;
+  left: 21%;
+  top: 68%;
+  width: 200px;
+  margin-top: 10px;
+  transform: translate(-50%, -50%); }
+
+/* line 237, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+#cntrl input[type=range]::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  background: #3bade3;
+  background: -moz-linear-gradient(45deg, #3bade3 0%, #576fe6 25%, #9844b7 51%, #ff357f 100%);
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, #3bade3), color-stop(25%, #576fe6), color-stop(51%, #9844b7), color-stop(100%, #ff357f));
+  background: -webkit-linear-gradient(45deg, #3bade3 0%, #576fe6 25%, #9844b7 51%, #ff357f 100%);
+  background: -o-linear-gradient(45deg, #3bade3 0%, #576fe6 25%, #9844b7 51%, #ff357f 100%);
+  background: -ms-linear-gradient(45deg, #3bade3 0%, #576fe6 25%, #9844b7 51%, #ff357f 100%);
+  background: linear-gradient(45deg, #3bade3 0%, #576fe6 25%, #9844b7 51%, #ff357f 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3bade3 ', endColorstr='#ff357f ', GradientType=1);
+  height: 2px; }
+
+/* line 249, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+#cntrl input[type=range]:focus {
+  outline: none; }
+
+/* line 252, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+#cntrl input[type=range]::-moz-range-track {
+  -moz-appearance: none;
+  background: #3bade3;
+  background: -moz-linear-gradient(45deg, #3bade3 0%, #576fe6 25%, #9844b7 51%, #ff357f 100%);
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, #3bade3), color-stop(25%, #576fe6), color-stop(51%, #9844b7), color-stop(100%, #ff357f));
+  background: -webkit-linear-gradient(45deg, #3bade3 0%, #576fe6 25%, #9844b7 51%, #ff357f 100%);
+  background: -o-linear-gradient(45deg, #3bade3 0%, #576fe6 25%, #9844b7 51%, #ff357f 100%);
+  background: -ms-linear-gradient(45deg, #3bade3 0%, #576fe6 25%, #9844b7 51%, #ff357f 100%);
+  background: linear-gradient(45deg, #3bade3 0%, #576fe6 25%, #9844b7 51%, #ff357f 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3bade3 ', endColorstr='#ff357f ', GradientType=1);
+  height: 2px; }
+
+/* line 264, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+#cntrl input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 2px solid;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  max-width: 80px;
+  position: relative;
+  bottom: 11px;
+  background-color: #1d1c25;
+  cursor: -webkit-grab;
+  -webkit-transition: border 1000ms ease;
+  transition: border 1000ms ease; }
+
+/* line 278, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+#cntrl input[type=range]::-moz-range-thumb {
+  -moz-appearance: none;
+  border: 2px solid;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  max-width: 80px;
+  position: relative;
+  bottom: 11px;
+  background-color: #1d1c25;
+  cursor: -moz-grab;
+  -moz-transition: border 1000ms ease;
+  transition: border 1000ms ease; }
+
+/* line 292, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+#cntrl .range.blue::-webkit-slider-thumb {
+  border-color: #3bade3; }
+
+/* line 295, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+#cntrl .range.ltpurple::-webkit-slider-thumb {
+  border-color: #576fe6; }
+
+/* line 298, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+#cntrl .range.purple::-webkit-slider-thumb {
+  border-color: #9844b7; }
+
+/* line 301, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+#cntrl .range.pink::-webkit-slider-thumb {
+  border-color: #ff357f; }
+
+/* line 304, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+#cntrl .range.blue::-moz-range-thumb {
+  border-color: #3bade3; }
+
+/* line 307, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+#cntrl .range.ltpurple::-moz-range-thumb {
+  border-color: #576fe6; }
+
+/* line 310, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+#cntrl .range.purple::-moz-range-thumb {
+  border-color: #9844b7; }
+
+/* line 313, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+#cntrl .range.pink::-moz-range-thumb {
+  border-color: #ff357f; }
+
+/* line 316, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+#cntrl input[type=range]::-webkit-slider-thumb:active {
+  cursor: -webkit-grabbing; }
+
+/* line 319, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+#cntrl input[type=range]::-moz-range-thumb:active {
+  cursor: -moz-grabbing; }
 
 /*# sourceMappingURL=style.css.map */

@@ -128,3 +128,22 @@ function KeyCheck(event) {
             break;
     }
 }
+
+//slider controls
+
+var hueslider = document.getElementById("hue");
+
+var showvalue = function () {
+    "use strict";
+    var hue;
+    var temp = this.value;
+    var namevalue = this.name;
+    if (namevalue === "hue") {
+        temp = temp + "deg";
+    }
+    namevalue = "--" + namevalue;
+    document.documentElement.style.setProperty(namevalue, temp);
+};
+
+hueslider.addEventListener("change", showvalue);
+hueslider.addEventListener("mousemove", showvalue);
