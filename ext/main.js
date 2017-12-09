@@ -28,8 +28,9 @@ chrome.extension.onMessage.addListener(function(msg, sender, sendResponse) {
   	$(document.body).append($modal);
   }
 
-  else if(msg.action == 'setURL') {
-  	alert('hi');
+  else if(msg.action == 'setImage') {
   	console.log(msg.info);
+    var imag = msg.info
+    $('.sfescn').attr('src', imag);
   }
 });
