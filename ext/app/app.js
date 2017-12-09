@@ -147,3 +147,4 @@ var showvalue = function () {
 
 hueslider.addEventListener("change", showvalue);
 hueslider.addEventListener("mousemove", showvalue);
+
