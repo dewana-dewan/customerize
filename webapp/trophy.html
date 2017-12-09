@@ -101,12 +101,14 @@
             <input id="upimage" style="visibility:hidden;" type="file" name="upimage">
             <label for="upimage" style="visibility:hidden"><img src="../ext/app/icon.svg">Upload Image</label>
             <div class="textcntrl">
-                <form id="textSetForm">
-                    <select name="fonts" class="font" id="fonts" style="width:100%;">
-                  <option value="Roboto" id="rob">Roboto</option>
-                  <option value="Dornen" id="lob">Dornen</option>
-                  <option value="Airstrike" id="air">Airstrike</option>
-                  <option value="American Captain" id="ac">American Captain</option>
+                <form id="trophySetForm">
+                    <select name="trophyType" class="font" id="trophyType" style="width:100%;">
+                  <option value="figurine" id="figurine">Figurine</option>
+                  <option value="magic" id="magic">Magic</option>
+                  <option value="archery" id="archery">Archery</option>
+                        <option value="volleyball" id="volleyball">Volleyball</option>
+                  <option value="car" id="car">Car</option>
+                        <option value="boat" id="boat">Boat</option>
                 </select>
                     <div class="colors">
                         <div class="ind">
@@ -123,7 +125,7 @@
                 </form>
                 <button id="setText" style="visibility:hidden;">Add Text</button>
             </div>
-            <button id="deleteobj" style="visibility:hidden;">Delete Object</button>
+            <button id="deleteobj">Delete Object</button>
             <div id="cntrl" style="display:none;">
                 <input type="range" min="-360" max="360" value="9" name="hue" id="hue" class="range blue">
             </div>

@@ -136,11 +136,10 @@ fabric.loadSVGFromURL("plate.svg", function (objects, options) {
     canvas.sendToBack(loadedObjects1);
 });
 
-
+var loadedObjects2;
 fabric.loadSVGFromURL("base.svg", function (objects, options) {
 
-    var loadedObjects2 = fabric.util.groupSVGElements(objects, options);
-
+    loadedObjects2 = fabric.util.groupSVGElements(objects, options);
     loadedObjects2.set({
         top: 262,
         left: 80,
@@ -154,7 +153,7 @@ fabric.loadSVGFromURL("base.svg", function (objects, options) {
 
     canvas.add(loadedObjects2);
     canvas.renderAll();
-
+    canvas.sendToBack(loadedObjects2);
 });
 
 var trophyCaption = new fabric.IText('Enter the caption', {
@@ -172,23 +171,115 @@ canvas.bringToFront(trophyCaption);
 
 var changeColor = function (x) {
     fabric.loadSVGFromURL("base.svg", function (objects, options) {
-
-        var loadedObjects2 = fabric.util.groupSVGElements(objects, options);
-
         loadedObjects2.set({
-            top: 262,
-            left: 80,
-            scaleX: 0.8,
-            scaleY: 0.8,
             fill: '#' + x,
-            lockMovementX: true,
-            lockMovementY: true,
-            hoverCursor: 'arrow',
-            selectable: false
         });
-
-        canvas.add(loadedObjects2);
         canvas.renderAll();
 
     });
 }
+
+document.getElementById('trophyType').addEventListener('change', function () {
+
+});
+
+var addArchery = function () {
+    fabric.Image.fromURL('trophies/archery.png', function (myImg) {
+        //i create an extra var for to change some image properties
+        var archery = myImg.set({
+            left: 130,
+            top: 30,
+            scaleX: 0.9,
+            scaleY: 0.9
+        });
+        canvas.bringToFront(archery);
+        canvas.add(archery);
+        canvas.renderAll();
+    });
+};
+
+
+var addFigureine = function () {
+    fabric.Image.fromURL('trophies/figurine.png', function (myImg) {
+        //i create an extra var for to change some image properties
+        var figureine = myImg.set({
+            left: 120,
+            top: 45,
+            scaleX: 0.7,
+            scaleY: 0.7
+        });
+        canvas.bringToFront(figureine);
+        canvas.add(figureine);
+        canvas.renderAll();
+    });
+};
+
+
+var addBoat = function () {
+    fabric.Image.fromURL('trophies/boat.png', function (myImg) {
+        //i create an extra var for to change some image properties
+        var boat = myImg.set({
+            left: 120,
+            top: 45,
+            scaleX: 0.7,
+            scaleY: 0.7
+        });
+        canvas.bringToFront(boat);
+        canvas.add(boat);
+        canvas.renderAll();
+    });
+};
+
+
+var addCar = function () {
+    fabric.Image.fromURL('trophies/car.png', function (myImg) {
+        //i create an extra var for to change some image properties
+        var car = myImg.set({
+            left: 120,
+            top: 45,
+            scaleX: 0.7,
+            scaleY: 0.7
+        });
+        canvas.bringToFront(car);
+        canvas.add(car);
+        canvas.renderAll();
+    });
+};
+
+var addMagic = function () {
+    fabric.Image.fromURL('trophies/magic.png', function (myImg) {
+        //i create an extra var for to change some image properties
+        var magic = myImg.set({
+            left: 120,
+            top: 45,
+            scaleX: 0.7,
+            scaleY: 0.7
+        });
+        canvas.bringToFront(magic);
+        canvas.add(magic);
+        canvas.renderAll();
+    });
+};
+
+var addVolleyball = function () {
+    fabric.Image.fromURL('trophies/volleyball.png', function (myImg) {
+        //i create an extra var for to change some image properties
+        var volleyball = myImg.set({
+            left: 120,
+            top: 45,
+            scaleX: 0.7,
+            scaleY: 0.7
+        });
+        canvas.bringToFront(volleyball);
+        canvas.add(volleyball);
+        canvas.renderAll();
+    });
+};
+
+
+addArchery();
+addFigureine();
+addCar();
+addBoat();
+addMagic();
+addVolleyball();
