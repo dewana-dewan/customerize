@@ -65,9 +65,6 @@ function readFile() {
 document.getElementById("upimage").addEventListener("change", readFile);
 
 
-
-
-
 //add text
 var setColor = function (x) {
     console.log('setColor called');
@@ -103,6 +100,31 @@ var addText = function () {
     });
 
     canvas.add(mytext);
+    document.getElementById('textvalue').value = " ";
+
 }
 
 document.getElementById('setText').addEventListener('click', addText);
+
+
+//deleting object
+document.getElementById('deleteobj').addEventListener('click', function () {
+    canvas.remove(canvas.getActiveObject());
+});
+
+
+document.addEventListener("keydown", KeyCheck);
+
+function KeyCheck(event) {
+    var KeyID = event.keyCode;
+    switch (KeyID) {
+        case 8:
+            canvas.remove(canvas.getActiveObject());
+            break;
+        case 46:
+            canvas.remove(canvas.getActiveObject());
+            break;
+        default:
+            break;
+    }
+}

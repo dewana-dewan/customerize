@@ -3,18 +3,19 @@ body {
     background-color: #374057;
 }
 
-#c {
-    border: 1px solid white;
-    position: absolute;
+#c,.canvas-container {
+    position: absolute!important;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     margin: auto;
 }
-#preview{
+
+#preview {
     display: none;
 }
+
 #target {
     @extend #c;
     height: 400px;
@@ -32,6 +33,20 @@ body {
     height: 100vh;
 }
 
+#deleteobj {
+    margin: 16px 0;
+    padding: 12px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    background-color: #2A3041;
+    font-family: Metropolis-SemiBold;
+    font-size: 16px;
+    color: red;
+    letter-spacing: 0;
+    width: 100%;
+}
+
 .header {
     font-family: Metropolis-SemiBold;
     font-size: 24px;
@@ -46,8 +61,8 @@ body {
     text-align: center;
     margin: 0 auto;
     margin-top: 12vw;
-    margin-left: 15vw;
-    margin-right: 5vw;
+    margin-left: 10vw;
+    margin-right: 7vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -61,13 +76,13 @@ body {
             flex-direction: column;
             button {
                 padding: 12px;
-                background-color: #2A3041;
                 border-radius: 3px;
                 border: none;
+                background-color: #7ED321;
                 cursor: pointer;
                 font-family: Metropolis-SemiBold;
                 font-size: 16px;
-                color: #FFFFFF;
+                color: white;
                 letter-spacing: 0;
                 width: 100%;
             }
