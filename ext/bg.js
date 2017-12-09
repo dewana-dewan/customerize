@@ -4,15 +4,15 @@ chrome.contextMenus.create({
 });
 
 chrome.contextMenus.onClicked.addListener(function(item, tab) {
-	alert(item.srcUrl);
+	// alert(item.srcUrl);
 	localStorage.setItem('url', item.srcUrl);
 
 	chrome.windows.create({
 			// Just use the full URL if you need to open an external page
 			url: chrome.runtime.getURL('app/index.html'),
 			type: 'popup',
-			focused: true,
-			state: 'maximized'
+			focused: true
+			// state: 'maximized'
 		}, function(win) {
 			// chrome.extension.getBackgroundPage().console.log(win, item.srcUrl);
 			// console.log(win, item.srcUrl);
