@@ -18,11 +18,11 @@
     }
   ],
   "web_accessible_resources": [
-    "assets/index.html"
+    "app/index.html", "app/fabric.min.js", "app/*.css", "app/*.jpg", "app/icon.svg", "./../assets/jquery-3.2.1.min.js"
   ],
   "browser_action": {
     "default_icon": "hello_world.png",
     "default_popup": "popup.html"
    },
-   "permissions": ["https://*/*", "https://*/", "contextMenus", "activeTab"]
+   "permissions": ["https://*/*", "https://*/", "contextMenus", "activeTab", "tabs"]
 }

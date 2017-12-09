@@ -7,19 +7,29 @@ chrome.extension.onMessage.addListener(function(msg, sender, sendResponse) {
   	var modal, image;
     img_url = msg.info.srcUrl;
   	$modal = $(document.createElement('div'));
+  	// $modal.attr('src' , chrome.runtime.getURL('app/index.html'));
+  	// $im_tag = $('#mainbg', $modal.contents());
+  	// console.log($im_tag);
+  	// $im_tag.attr('src', img_url);
 
   	$.ajax({
-  		url: chrome.extension.getURL('assets/index.html'),
+  		url: chrome.extension.getURL('app/index.html'),
   		success: function(data) {
   			$dat = $($.parseHTML(data));
-  			$modal.append($dat);
-  			$im_tag = $('#test_img', $modal);
+  			$im_tag = $('#mainbg', $dat);
   			$im_tag.attr('src', img_url);
+  			// $modal.contents().find("body").append($dat);
+  			$modal.append($dat);
   			console.log($modal, $im_tag);
   		}
   	});
 
   	$modal.addClass('modal_hai');
   	$(document.body).append($modal);
+  }
+
+  else if(msg.action == 'setURL') {
+  	alert('hi');
+  	console.log(msg.info);
   }
 });
