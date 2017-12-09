@@ -73,8 +73,7 @@ function make_base() {
         context.drawImage(base_image, (400 - 400 * ratio) / 2, 0, 400 * ratio, 400);
     }
 }*/
-var URL = localStorage.getItem('url');
-$('#mainbg').attr('src', URL);
+
 var canvas = new fabric.Canvas('c');
 
 //set background color
@@ -117,7 +116,7 @@ canvas.add(bgInstance);
         top: 10
     });
     canvas.add(ipInstance);*/
-}
+
 
 
 
