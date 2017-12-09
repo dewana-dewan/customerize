@@ -211,12 +211,10 @@ body {
     letter-spacing: 0.62px; }
 
 /* line 220, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
-#mug {
-  filter: hue-rotate(var(--hue));
-  background: white;
-  padding: 24px; }
+#c, #target {
+  filter: hue-rotate(var(--hue)); }
 
-/* line 227, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+/* line 225, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
 #cntrl .range {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -227,7 +225,7 @@ body {
   margin-top: 10px;
   transform: translate(-50%, -50%); }
 
-/* line 237, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+/* line 235, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
 #cntrl input[type=range]::-webkit-slider-runnable-track {
   -webkit-appearance: none;
   background: #3bade3;
@@ -240,11 +238,11 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3bade3 ', endColorstr='#ff357f ', GradientType=1);
   height: 2px; }
 
-/* line 249, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+/* line 247, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
 #cntrl input[type=range]:focus {
   outline: none; }
 
-/* line 252, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+/* line 250, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
 #cntrl input[type=range]::-moz-range-track {
   -moz-appearance: none;
   background: #3bade3;
@@ -257,7 +255,7 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3bade3 ', endColorstr='#ff357f ', GradientType=1);
   height: 2px; }
 
-/* line 264, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+/* line 262, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
 #cntrl input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
   border: 2px solid;
@@ -272,7 +270,7 @@ body {
   -webkit-transition: border 1000ms ease;
   transition: border 1000ms ease; }
 
-/* line 278, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+/* line 276, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
 #cntrl input[type=range]::-moz-range-thumb {
   -moz-appearance: none;
   border: 2px solid;
@@ -287,43 +285,43 @@ body {
   -moz-transition: border 1000ms ease;
   transition: border 1000ms ease; }
 
-/* line 292, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+/* line 290, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
 #cntrl .range.blue::-webkit-slider-thumb {
   border-color: #3bade3; }
 
-/* line 295, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+/* line 293, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
 #cntrl .range.ltpurple::-webkit-slider-thumb {
   border-color: #576fe6; }
 
-/* line 298, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+/* line 296, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
 #cntrl .range.purple::-webkit-slider-thumb {
   border-color: #9844b7; }
 
-/* line 301, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+/* line 299, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
 #cntrl .range.pink::-webkit-slider-thumb {
   border-color: #ff357f; }
 
-/* line 304, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+/* line 302, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
 #cntrl .range.blue::-moz-range-thumb {
   border-color: #3bade3; }
 
-/* line 307, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+/* line 305, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
 #cntrl .range.ltpurple::-moz-range-thumb {
   border-color: #576fe6; }
 
-/* line 310, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+/* line 308, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
 #cntrl .range.purple::-moz-range-thumb {
   border-color: #9844b7; }
 
-/* line 313, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+/* line 311, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
 #cntrl .range.pink::-moz-range-thumb {
   border-color: #ff357f; }
 
-/* line 316, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+/* line 314, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
 #cntrl input[type=range]::-webkit-slider-thumb:active {
   cursor: -webkit-grabbing; }
 
-/* line 319, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+/* line 317, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
 #cntrl input[type=range]::-moz-range-thumb:active {
   cursor: -moz-grabbing; }
 
