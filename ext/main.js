@@ -29,7 +29,6 @@ chrome.extension.onMessage.addListener(function(msg, sender, sendResponse) {
   }
 
   else if(msg.action == 'setImage') {
-  	console.log(msg.info);
     var imag = msg.info
     $('.sfescn').attr('src', imag);
   }
