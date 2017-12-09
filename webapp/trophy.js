@@ -5,36 +5,6 @@ var canvas = new fabric.Canvas('c');
 canvas.backgroundColor = 'white';
 
 
-//add the main image
-var background = document.getElementById('mainbg');
-background.id = 'mug';
-var oheight = background.height;
-var owidth = background.width;
-var ratio = oheight / owidth;
-var nheight = 400;
-var nwidth = nheight / ratio;
-var slide = (400 - nwidth) / 2;
-console.log(slide);
-console.log(ratio);
-var bgInstance = new fabric.Image(background, {
-    left: slide,
-    top: 0,
-    lockMovementX: true,
-    lockMovementY: true,
-    hoverCursor: 'arrow',
-    selectable: false
-});
-bgInstance.set({
-    scaleX: nwidth / owidth,
-    scaleY: nheight / oheight
-});
-canvas.add(bgInstance);
-window.onload = function () {
-    if (!window.location.hash) {
-        window.location = window.location + '#loaded';
-        window.location.reload();
-    }
-}
 //add the subordinate images
 
 function readFile() {
@@ -116,9 +86,6 @@ document.addEventListener("keydown", KeyCheck);
 function KeyCheck(event) {
     var KeyID = event.keyCode;
     switch (KeyID) {
-        case 8:
-            canvas.remove(canvas.getActiveObject());
-            break;
         case 46:
             canvas.remove(canvas.getActiveObject());
             break;
@@ -145,3 +112,83 @@ var showvalue = function () {
 
 hueslider.addEventListener("change", showvalue);
 hueslider.addEventListener("mousemove", showvalue);
+
+
+//trophy name update
+
+fabric.loadSVGFromURL("plate.svg", function (objects, options) {
+
+    var loadedObjects1 = fabric.util.groupSVGElements(objects, options);
+
+    loadedObjects1.set({
+        top: 320,
+        left: 80,
+        scaleX: 0.8,
+        scaleY: 0.8,
+        lockMovementX: true,
+        lockMovementY: true,
+        hoverCursor: 'arrow',
+        selectable: false
+    });
+
+    canvas.add(loadedObjects1);
+    canvas.renderAll();
+    canvas.sendToBack(loadedObjects1);
+});
+
+
+fabric.loadSVGFromURL("base.svg", function (objects, options) {
+
+    var loadedObjects2 = fabric.util.groupSVGElements(objects, options);
+
+    loadedObjects2.set({
+        top: 262,
+        left: 80,
+        scaleX: 0.8,
+        scaleY: 0.8,
+        lockMovementX: true,
+        lockMovementY: true,
+        hoverCursor: 'arrow',
+        selectable: false
+    });
+
+    canvas.add(loadedObjects2);
+    canvas.renderAll();
+
+});
+
+var trophyCaption = new fabric.IText('Enter the caption', {
+    top: 340,
+    left: 140,
+    fill: 'white',
+    fontSize: 16,
+    fontFamily: 'Roboto'
+});
+
+canvas.add(trophyCaption);
+
+canvas.bringToFront(trophyCaption);
+
+
+var changeColor = function (x) {
+    fabric.loadSVGFromURL("base.svg", function (objects, options) {
+
+        var loadedObjects2 = fabric.util.groupSVGElements(objects, options);
+
+        loadedObjects2.set({
+            top: 262,
+            left: 80,
+            scaleX: 0.8,
+            scaleY: 0.8,
+            fill: '#' + x,
+            lockMovementX: true,
+            lockMovementY: true,
+            hoverCursor: 'arrow',
+            selectable: false
+        });
+
+        canvas.add(loadedObjects2);
+        canvas.renderAll();
+
+    });
+}

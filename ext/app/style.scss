@@ -216,17 +216,12 @@ body {
 }
 
 //mug css
-
-#c{
-    filter: hue-rotate(var(--hue));
-}
-
 #cntrl {
     .range {
         -webkit-appearance: none;
         -moz-appearance: none;
         position: absolute;
-        left: 21%;
+        left: 25%;
         top: 68%;
         width: 200px;
         margin-top: 10px;

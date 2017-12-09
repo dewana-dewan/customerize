@@ -92,20 +92,17 @@
             <div class="grid-block block80"></div>
         </div>
     </div>
-    <img src="../ext/assets/mug.png" id="mainbg" class="hidden">
-    <img src="#" id="preview">
     <div class="header"> <img src="../ext/assets/icon.png" class="logo">
         <h1>Customerize</h1>
     </div>
     <a href="#" id="dlimg" class="hidden">Download the image</a>
-    <div class="content">
+    <div class="content" style="margin-left: 15vw;">
         <div class="r0">
             <input id="upimage" style="visibility:hidden;" type="file" name="upimage">
-            <label for="upimage"><img src="../ext/app/icon.svg">Upload Image</label>
+            <label for="upimage" style="visibility:hidden"><img src="../ext/app/icon.svg">Upload Image</label>
             <div class="textcntrl">
                 <form id="textSetForm">
-                    <input type="text" id="textvalue" name="textvalue" placeholder="Start typing something">
-                    <select name="fonts" class="font" id="fonts">
+                    <select name="fonts" class="font" id="fonts" style="width:100%;">
                   <option value="Roboto" id="rob">Roboto</option>
                   <option value="Dornen" id="lob">Dornen</option>
                   <option value="Airstrike" id="air">Airstrike</option>
@@ -113,21 +110,21 @@
                 </select>
                     <div class="colors">
                         <div class="ind">
-                            <div id="fff" class="selector"></div>
-                            <div id="000" class="blackcolor selector"></div>
-                            <div id="4A90E2" class="bluecolor selector"></div>
-                            <div id="D0021B" class="selector"></div>
-                            <div id="9013FE" class="purplecolor selector"></div>
-                            <div id="F8E71C"></div>
+                            <div id="fff" class="selector" onclick="changeColor(this.id)"></div>
+                            <div id="000" class="blackcolor selector" onclick="changeColor(this.id)"></div>
+                            <div id="4A90E2" class="bluecolor selector" onclick="changeColor(this.id)"></div>
+                            <div id="D0021B" class="selector" onclick="changeColor(this.id)"></div>
+                            <div id="9013FE" class="purplecolor selector" onclick="changeColor(this.id)"></div>
+                            <div id="F8E71C" onclick="changeColor(this.id)"></div>
                         </div>
                         <!--input type="color" value="#F76B1C"-->
                     </div>
 
                 </form>
-                <button id="setText">Add Text</button>
+                <button id="setText" style="visibility:hidden;">Add Text</button>
             </div>
-            <button id="deleteobj">Delete Object</button>
-            <div id="cntrl">
+            <button id="deleteobj" style="visibility:hidden;">Delete Object</button>
+            <div id="cntrl" style="display:none;">
                 <input type="range" min="-360" max="360" value="9" name="hue" id="hue" class="range blue">
             </div>
         </div>
@@ -138,10 +135,11 @@
             <button class="confirm" id="confirmbtn" href="#" download="filename.png">Continue with your order ></button>
         </div>
     </div>
-
-    <canvas id="c" width="400" height="400">
+    <div id="root">
+        <canvas id="c" width="400" height="400">
         
     </canvas>
+    </div>
     <img src="../ext/app/bg.svg" id="bgimage">
 </body>
 
@@ -149,7 +147,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="../ext/app/style.css">
 <link rel="stylesheet" href="../ext/app/bg.css">
-<link rel="stylesheet" href="small.css">
 <script class="jsbin" src="../ext/assets/jquery-3.2.1.min.js"></script>
 <script src="../ext/app/fabric.min.js"></script>
-<script src="app.js"></script>
+<script src="trophy.js"></script>

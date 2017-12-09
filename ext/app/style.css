@@ -211,21 +211,17 @@ body {
     letter-spacing: 0.62px; }
 
 /* line 220, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
-#c, #target {
-  filter: hue-rotate(var(--hue)); }
-
-/* line 225, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
 #cntrl .range {
   -webkit-appearance: none;
   -moz-appearance: none;
   position: absolute;
-  left: 21%;
+  left: 25%;
   top: 68%;
   width: 200px;
   margin-top: 10px;
   transform: translate(-50%, -50%); }
 
-/* line 235, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+/* line 230, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
 #cntrl input[type=range]::-webkit-slider-runnable-track {
   -webkit-appearance: none;
   background: #3bade3;
@@ -238,11 +234,11 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3bade3 ', endColorstr='#ff357f ', GradientType=1);
   height: 2px; }
 
-/* line 247, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+/* line 242, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
 #cntrl input[type=range]:focus {
   outline: none; }
 
-/* line 250, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+/* line 245, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
 #cntrl input[type=range]::-moz-range-track {
   -moz-appearance: none;
   background: #3bade3;
@@ -255,7 +251,7 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3bade3 ', endColorstr='#ff357f ', GradientType=1);
   height: 2px; }
 
-/* line 262, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+/* line 257, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
 #cntrl input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
   border: 2px solid;
@@ -270,7 +266,7 @@ body {
   -webkit-transition: border 1000ms ease;
   transition: border 1000ms ease; }
 
-/* line 276, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+/* line 271, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
 #cntrl input[type=range]::-moz-range-thumb {
   -moz-appearance: none;
   border: 2px solid;
@@ -285,43 +281,43 @@ body {
   -moz-transition: border 1000ms ease;
   transition: border 1000ms ease; }
 
-/* line 290, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+/* line 285, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
 #cntrl .range.blue::-webkit-slider-thumb {
   border-color: #3bade3; }
 
-/* line 293, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+/* line 288, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
 #cntrl .range.ltpurple::-webkit-slider-thumb {
   border-color: #576fe6; }
 
-/* line 296, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+/* line 291, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
 #cntrl .range.purple::-webkit-slider-thumb {
   border-color: #9844b7; }
 
-/* line 299, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+/* line 294, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
 #cntrl .range.pink::-webkit-slider-thumb {
   border-color: #ff357f; }
 
-/* line 302, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+/* line 297, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
 #cntrl .range.blue::-moz-range-thumb {
   border-color: #3bade3; }
 
-/* line 305, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+/* line 300, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
 #cntrl .range.ltpurple::-moz-range-thumb {
   border-color: #576fe6; }
 
-/* line 308, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+/* line 303, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
 #cntrl .range.purple::-moz-range-thumb {
   border-color: #9844b7; }
 
-/* line 311, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+/* line 306, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
 #cntrl .range.pink::-moz-range-thumb {
   border-color: #ff357f; }
 
-/* line 314, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+/* line 309, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
 #cntrl input[type=range]::-webkit-slider-thumb:active {
   cursor: -webkit-grabbing; }
 
-/* line 317, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+/* line 312, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
 #cntrl input[type=range]::-moz-range-thumb:active {
   cursor: -moz-grabbing; }
 

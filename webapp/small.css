@@ -1,0 +1,3 @@
+#c {
+    filter: hue-rotate(var(--hue));
+}
