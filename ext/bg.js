@@ -1,10 +1,11 @@
 chrome.contextMenus.create({
 	"title": "Customerize this",
-	"contexts": ["all"]
+	"contexts": ["image"]
 });
 
 chrome.contextMenus.onClicked.addListener(function(item, tab) {
-	// alert(item.srcUrl);
+	
+	console.log(item, item.srcUrl);
 	localStorage.setItem('url', item.srcUrl);
 
 	chrome.windows.create({
