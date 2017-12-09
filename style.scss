@@ -12,15 +12,18 @@ body {
     right: 0;
     margin: auto;
 }
-
-#target{
-    @extend #c;
-    height: 400px;
-    
-}
-.hidden{
+#preview{
     display: none;
 }
+#target {
+    @extend #c;
+    height: 400px;
+}
+
+.hidden {
+    display: none;
+}
+
 #bgimage {
     position: absolute;
     right: 0;
@@ -56,16 +59,17 @@ body {
             text-align: center;
             display: flex;
             flex-direction: column;
-            button{
-padding: 12px;
+            button {
+                padding: 12px;
                 background-color: #2A3041;
                 border-radius: 3px;
                 border: none;
                 cursor: pointer;
-font-family: Metropolis-SemiBold;
-font-size: 16px;
-color: #FFFFFF;
-letter-spacing: 0;
+                font-family: Metropolis-SemiBold;
+                font-size: 16px;
+                color: #FFFFFF;
+                letter-spacing: 0;
+                width: 100%;
             }
             .font {
                 margin: 16px 0;
@@ -116,22 +120,22 @@ letter-spacing: 0;
                         width: 24px;
                         cursor: pointer;
                     }
-                    #white {
+                    #fff {
                         background-color: white;
                     }
-                    #black {
+                    .blackcolor {
                         background-color: black;
                     }
-                    #blue {
+                    .bluecolor {
                         background-color: #4A90E2;
                     }
-                    #red {
+                    #D0021B {
                         background-color: #D0021B;
                     }
-                    #purple {
+                    .purplecolor {
                         background-color: #9013FE;
                     }
-                    #yellow {
+                    #F8E71C {
                         background-color: #F8E71C;
                     }
                 }

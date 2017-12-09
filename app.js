@@ -1,5 +1,6 @@
 /*align canvas*/
-
+var textColor = '#fff';
+var fontName = 'Roboto';
 /*window.onload = window.onresize = function() {
     let canvas = document.getElementById('c');
     canvas.width = 400;
@@ -81,7 +82,8 @@ var bgcolor = new fabric.Rect({
     left: 0,
     fill: '#fff',
     height: 400,
-    width: 400
+    width: 400,
+    selectable: false
 })
 canvas.add(bgcolor);
 
@@ -94,7 +96,8 @@ var bgInstance = new fabric.Image(background, {
     top: 0,
     lockMovementX: true,
     lockMovementY: true,
-    hoverCursor: 'arrow'
+    hoverCursor: 'arrow',
+    selectable: false
 });
 bgInstance.set({
     scaleX: scale,
@@ -105,15 +108,45 @@ canvas.add(bgInstance);
 //add the subordinate images
 
 
-/*var ipimage = document.getElementById('preview');
 
-let scale2 = 400 / ipimage.width;
-var ipInstance = new fabric.Image(ipimage, {
-    left: 10,
-    top: 10
-});
-ipInstance.set({
-    scaleX: scale2,
-    scaleY: scale2
-});
-canvas.add(ipInstance);*/
+    /*var ipimage = document.getElementById('preview');
+    console.log('got it');
+    var ipInstance = new fabric.Image(ipimage, {
+        left: 10,
+        top: 10
+    });
+    canvas.add(ipInstance);*/
+}
+
+
+
+
+
+//add text
+var setColor = function (x) {
+    textColor = '#' + x;
+    console.log(textColor);
+}
+
+
+var addText = function () {
+    console.log('calll meeee');
+
+    let textValue = document.getElementById('textvalue').value;
+    if (textValue === "") {
+        alert('Enter a text first');
+        return;
+    }
+    let font = document.getElementById("fonts");
+    let value = font.options[font.selectedIndex].value;
+    fontName = font.options[font.selectedIndex].text;
+
+    var mytext = new fabric.Text(textValue, {
+        left: 200,
+        top: 200,
+        fontFamily: fontName,
+        fill: textColor
+    });
+
+    canvas.add(mytext);
+}
