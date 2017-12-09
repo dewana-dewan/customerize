@@ -20,9 +20,16 @@ canvas.add(bgcolor);
 
 //add the main image
 var background = document.getElementById('mainbg');
-var scale = 400 / background.width;
+var oheight = background.height;
+var owidth = background.width;
+var ratio = oheight/owidth;
+var nheight = 400;
+var nwidth = nheight/ratio;
+var slide = (400 - nwidth)/2;
+console.log(slide);
+console.log(ratio);
 var bgInstance = new fabric.Image(background, {
-    left: 0,
+    left: slide,
     top: 0,
     lockMovementX: true,
     lockMovementY: true,
@@ -30,11 +37,16 @@ var bgInstance = new fabric.Image(background, {
     selectable: false
 });
 bgInstance.set({
-    scaleX: scale,
-    scaleY: scale
+    scaleX: nwidth/owidth,
+    scaleY: nheight/oheight
 });
 canvas.add(bgInstance);
-
+window.onload = function() {
+    if(!window.location.hash) {
+        window.location = window.location + '#loaded';
+        window.location.reload();
+    }
+}
 //add the subordinate images
 
 
