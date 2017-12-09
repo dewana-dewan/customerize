@@ -103,30 +103,33 @@
             <input id="upimage" style="visibility:hidden;" type="file" name="upimage">
             <label for="upimage" ><img src="../ext/app/icon.svg">Upload Image</label>
             <div class="textcntrl">
-                <form id="trophySetForm">
-                    <select name="trophyType" class="font" id="trophyType" style="width:100%;">
-                        <option value="choose a trophy">Choose a trophy</option>
-                  <option value="figurine" id="figurine">Figurine</option>
-                  <option value="magic" id="magic">Magic</option>
-                  <option value="archery" id="archery">Archery</option>
-                        <option value="volleyball" id="volleyball">Volleyball</option>
-                  <option value="car" id="car">Car</option>
-                        <option value="boat" id="boat">Boat</option>
-                </select>
                     <div class="colors">
+                        <p class="head">Material Color</p>
+                        <div class="ind mt">
+                            <div id="525252" class="copper selector" onclick="changemtColor(this.id)"></div>
+                            <div id="868686" class="silver selector" onclick="changemtColor(this.id)"></div>
+                            <div id="A32B00" class="wood selector" onclick="changemtColor(this.id)"></div>
+                        </div>
+                    </div>
+                   <div class="colors">
+                        <p class="head">Plating Color</p>
+                        <div class="ind mt">
+                            <div id="FFDD00" class="gold selector" onclick="changeptColor(this.id)"></div>
+                            <div id="E7E7E7" class="ag selector" onclick="changeptColor(this.id)"></div>
+                            <div id="5A1C00" class="lakdi selector" onclick="changeptColor(this.id)"></div>
+                        </div>
+                    </div>
+                   <div class="colors">
+                        <p class="head">background Color</p>
                         <div class="ind">
                             <div id="fff" class="selector" onclick="changeColor(this.id)"></div>
-                            <div id="000" class="blackcolor selector" onclick="changeColor(this.id)"></div>
+                            <div id="868686" class="silver selector" onclick="changeColor(this.id)"></div>
                             <div id="4A90E2" class="bluecolor selector" onclick="changeColor(this.id)"></div>
                             <div id="D0021B" class="selector" onclick="changeColor(this.id)"></div>
                             <div id="9013FE" class="purplecolor selector" onclick="changeColor(this.id)"></div>
                             <div id="F8E71C" onclick="changeColor(this.id)"></div>
                         </div>
-                        <!--input type="color" value="#F76B1C"-->
                     </div>
-
-                </form>
-                <button id="setText" style="visibility:hidden;">Add Text</button>
             </div>
             <button id="deleteobj">Delete Object</button>
             <div id="cntrl" style="display:none;">
@@ -161,4 +164,4 @@
 <link rel="stylesheet" href="../ext/app/bg.css">
 <script class="jsbin" src="../ext/assets/jquery-3.2.1.min.js"></script>
 <script src="../ext/app/fabric.min.js"></script>
-<script src="trophy.js"></script>
+<script src="medal.js"></script>
