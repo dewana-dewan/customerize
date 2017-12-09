@@ -168,7 +168,6 @@ canvas.add(trophyCaption);
 
 canvas.bringToFront(trophyCaption);
 
-
 var changeColor = function (x) {
     fabric.loadSVGFromURL("base.svg", function (objects, options) {
         loadedObjects2.set({
@@ -178,10 +177,6 @@ var changeColor = function (x) {
 
     });
 }
-
-document.getElementById('trophyType').addEventListener('change', function () {
-
-});
 
 var addArchery = function () {
     fabric.Image.fromURL('trophies/archery.png', function (myImg) {
@@ -220,9 +215,7 @@ var addBoat = function () {
         //i create an extra var for to change some image properties
         var boat = myImg.set({
             left: 120,
-            top: 45,
-            scaleX: 0.7,
-            scaleY: 0.7
+            top: 200
         });
         canvas.bringToFront(boat);
         canvas.add(boat);
@@ -235,10 +228,8 @@ var addCar = function () {
     fabric.Image.fromURL('trophies/car.png', function (myImg) {
         //i create an extra var for to change some image properties
         var car = myImg.set({
-            left: 120,
-            top: 45,
-            scaleX: 0.7,
-            scaleY: 0.7
+            left: 125,
+            top: 55
         });
         canvas.bringToFront(car);
         canvas.add(car);
@@ -250,10 +241,8 @@ var addMagic = function () {
     fabric.Image.fromURL('trophies/magic.png', function (myImg) {
         //i create an extra var for to change some image properties
         var magic = myImg.set({
-            left: 120,
-            top: 45,
-            scaleX: 0.7,
-            scaleY: 0.7
+            left: 140,
+            top: 70
         });
         canvas.bringToFront(magic);
         canvas.add(magic);
@@ -265,10 +254,8 @@ var addVolleyball = function () {
     fabric.Image.fromURL('trophies/volleyball.png', function (myImg) {
         //i create an extra var for to change some image properties
         var volleyball = myImg.set({
-            left: 120,
-            top: 45,
-            scaleX: 0.7,
-            scaleY: 0.7
+            left: 150,
+            top: 70
         });
         canvas.bringToFront(volleyball);
         canvas.add(volleyball);
@@ -276,10 +263,27 @@ var addVolleyball = function () {
     });
 };
 
+document.getElementById('trophyType').addEventListener('change', function () {
+    let ela = this.value;
 
-addArchery();
-addFigureine();
-addCar();
-addBoat();
-addMagic();
-addVolleyball();
+    switch (ela) {
+        case 'archery':
+            addArchery();
+            break;
+        case 'figurine':
+            addFigureine();
+            break;
+        case 'car':
+            addCar();
+            break;
+        case 'boat':
+            addBoat();
+            break;
+        case 'magic':
+            addMagic();
+            break;
+        case 'volleyball':
+            addVolleyball();
+            break;
+    }
+});
