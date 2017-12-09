@@ -4,6 +4,9 @@ var fontName = 'Roboto';
 var canvas = new fabric.Canvas('c');
 canvas.backgroundColor = 'white';
 
+$( document ).ready(function() {
+    addFigureine();
+});
 
 //add the subordinate images
 
@@ -156,19 +159,56 @@ fabric.loadSVGFromURL("base.svg", function (objects, options) {
     canvas.sendToBack(loadedObjects2);
 });
 
+
+fabric.loadSVGFromURL("stand.svg", function (objects, options) {
+
+    loadedObjects3 = fabric.util.groupSVGElements(objects, options);
+    loadedObjects3.set({
+        top: 160,
+        left: 165,
+        scaleX: 0.8,
+        scaleY: 0.8,
+        lockMovementX: true,
+        lockMovementY: true,
+        hoverCursor: 'arrow',
+        selectable: false
+    });
+
+    canvas.add(loadedObjects3);
+    canvas.renderAll();
+    canvas.sendToBack(loadedObjects3);
+});
+
 var trophyCaption = new fabric.IText('Enter the caption', {
     top: 340,
     left: 140,
     fill: 'white',
     fontSize: 16,
-    fontFamily: 'Roboto'
+    fontFamily: 'Roboto' 
 });
 
 canvas.add(trophyCaption);
 
 canvas.bringToFront(trophyCaption);
 
-var changeColor = function (x) {
+
+
+var standText = new fabric.IText('I\nI\nI\nT\nA\n', {
+    top: 170,
+    left: 190,
+    fill: 'black',
+    fontSize: 12,
+    fontFamily: 'Roboto'
+});
+
+canvas.add(standText);
+
+canvas.bringToFront(standText);
+
+
+
+
+var changebColor = function (x) {
     fabric.loadSVGFromURL("base.svg", function (objects, options) {
         loadedObjects2.set({
             fill: '#' + x,
@@ -178,18 +218,29 @@ var changeColor = function (x) {
     });
 }
 
+var changesColor = function (x) {
+    fabric.loadSVGFromURL("stand.svg", function (objects, options) {
+        loadedObjects3.set({
+            fill: '#' + x,
+        });
+        canvas.sendToBack(loadedObjects3);
+        canvas.renderAll();
+
+    });
+}
+
+
 var addArchery = function () {
     fabric.Image.fromURL('trophies/archery.png', function (myImg) {
         //i create an extra var for to change some image properties
         var archery = myImg.set({
-            left: 130,
-            top: 30,
-            scaleX: 0.9,
-            scaleY: 0.9
+            left: 165,
+            top: 45,
+            scaleX: 0.4,
+            scaleY: 0.4
         });
         canvas.bringToFront(archery);
         canvas.add(archery);
-        canvas.renderAll();
     });
 };
 
@@ -198,14 +249,13 @@ var addFigureine = function () {
     fabric.Image.fromURL('trophies/figurine.png', function (myImg) {
         //i create an extra var for to change some image properties
         var figureine = myImg.set({
-            left: 120,
-            top: 45,
-            scaleX: 0.7,
-            scaleY: 0.7
+            left: 162,
+            top: 52,
+            scaleX: 0.3,
+            scaleY: 0.3
         });
         canvas.bringToFront(figureine);
         canvas.add(figureine);
-        canvas.renderAll();
     });
 };
 
@@ -214,12 +264,13 @@ var addBoat = function () {
     fabric.Image.fromURL('trophies/boat.png', function (myImg) {
         //i create an extra var for to change some image properties
         var boat = myImg.set({
-            left: 120,
-            top: 200
+            left: 140,
+            top: 105,
+            scaleX: 0.7,
+            scaleY: 0.7
         });
         canvas.bringToFront(boat);
         canvas.add(boat);
-        canvas.renderAll();
     });
 };
 
@@ -228,12 +279,13 @@ var addCar = function () {
     fabric.Image.fromURL('trophies/car.png', function (myImg) {
         //i create an extra var for to change some image properties
         var car = myImg.set({
-            left: 125,
-            top: 55
+            left: 160,
+            top: 45,
+            scaleX: 0.5,
+            scaleY: 0.5
         });
         canvas.bringToFront(car);
         canvas.add(car);
-        canvas.renderAll();
     });
 };
 
@@ -241,12 +293,13 @@ var addMagic = function () {
     fabric.Image.fromURL('trophies/magic.png', function (myImg) {
         //i create an extra var for to change some image properties
         var magic = myImg.set({
-            left: 140,
-            top: 70
+            left: 170,
+            top: 50,
+            scaleX: 0.5,
+            scaleY: 0.5
         });
         canvas.bringToFront(magic);
         canvas.add(magic);
-        canvas.renderAll();
     });
 };
 
@@ -254,12 +307,13 @@ var addVolleyball = function () {
     fabric.Image.fromURL('trophies/volleyball.png', function (myImg) {
         //i create an extra var for to change some image properties
         var volleyball = myImg.set({
-            left: 150,
-            top: 70
+            left: 175,
+            top: 45,
+            scaleX: 0.5,
+            scaleY: 0.5
         });
         canvas.bringToFront(volleyball);
         canvas.add(volleyball);
-        canvas.renderAll();
     });
 };
 
@@ -287,3 +341,4 @@ document.getElementById('trophyType').addEventListener('change', function () {
             break;
     }
 });
+

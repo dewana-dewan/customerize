@@ -169,7 +169,7 @@ var changeColor = function (x) {
 var Caption = new fabric.IText('Some Competition', {
     top: 80,
     left: 140,
-    fill: 'black',
+    fill: 'gold',
     fontSize: 16,
     fontFamily: 'Roboto'
 });

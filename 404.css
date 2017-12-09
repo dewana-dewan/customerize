@@ -1,0 +1,23 @@
+/* line 1, /Users/Abhishek/Playground/scripton/customerize/404.scss */
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+  width: 90%;
+  margin-top: 32px; }
+  /* line 8, /Users/Abhishek/Playground/scripton/customerize/404.scss */
+  .container p {
+    font-family: Metropolis-ExtraBold;
+    font-size: 32px;
+    color: #F48AC0;
+    letter-spacing: 0; }
+  /* line 14, /Users/Abhishek/Playground/scripton/customerize/404.scss */
+  .container a {
+    /* HOME: */
+    font-family: Metropolis-ExtraBold;
+    font-size: 32px;
+    color: #31C6ED;
+    letter-spacing: 0; }
+
+/*# sourceMappingURL=404.css.map */

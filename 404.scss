@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    width: 90%;
+    margin-top: 32px;
+    p {
+        font-family: Metropolis-ExtraBold;
+        font-size: 32px;
+        color: #F48AC0;
+        letter-spacing: 0;
+    }
+    a {
+        /* HOME: */
+        font-family: Metropolis-ExtraBold;
+        font-size: 32px;
+        color: #31C6ED;
+        letter-spacing: 0;
+    }
+}
