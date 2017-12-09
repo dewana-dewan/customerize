@@ -5,27 +5,17 @@ var URL = localStorage.getItem('url');
 $('#mainbg').attr('src', URL);
 
 var canvas = new fabric.Canvas('c');
-
-//set background color
-var bgcolor = new fabric.Rect({
-    top: 0,
-    left: 0,
-    fill: '#fff',
-    height: 400,
-    width: 400,
-    selectable: false
-});
-canvas.add(bgcolor);
+canvas.backgroundColor = 'white';
 
 
 //add the main image
 var background = document.getElementById('mainbg');
 var oheight = background.height;
 var owidth = background.width;
-var ratio = oheight/owidth;
+var ratio = oheight / owidth;
 var nheight = 400;
-var nwidth = nheight/ratio;
-var slide = (400 - nwidth)/2;
+var nwidth = nheight / ratio;
+var slide = (400 - nwidth) / 2;
 console.log(slide);
 console.log(ratio);
 var bgInstance = new fabric.Image(background, {
@@ -37,28 +27,42 @@ var bgInstance = new fabric.Image(background, {
     selectable: false
 });
 bgInstance.set({
-    scaleX: nwidth/owidth,
-    scaleY: nheight/oheight
+    scaleX: nwidth / owidth,
+    scaleY: nheight / oheight
 });
 canvas.add(bgInstance);
-window.onload = function() {
-    if(!window.location.hash) {
+window.onload = function () {
+    if (!window.location.hash) {
         window.location = window.location + '#loaded';
         window.location.reload();
     }
 }
 //add the subordinate images
 
+function readFile() {
 
+    if (this.files && this.files[0]) {
 
-    /*var ipimage = document.getElementById('preview');
-    console.log('got it');
-    var ipInstance = new fabric.Image(ipimage, {
-        left: 10,
-        top: 10
-    });
-    canvas.add(ipInstance);*/
+        var FR = new FileReader();
 
+        FR.addEventListener("load", function (e) {
+            document.getElementById("preview").src = e.target.result;
+
+            fabric.Image.fromURL(e.target.result, function (myImg) {
+                //i create an extra var for to change some image properties
+                var img1 = myImg.set({
+                    left: 0,
+                    top: 0,
+                });
+                canvas.add(img1);
+            });
+
+        });
+        FR.readAsDataURL(this.files[0]);
+    }
+}
+
+document.getElementById("upimage").addEventListener("change", readFile);
 
 
 
@@ -68,14 +72,14 @@ window.onload = function() {
 var setColor = function (x) {
     console.log('setColor called');
     textColor = '#' + x;
-    console.log('Color set to '+ textColor);
+    console.log('Color set to ' + textColor);
 };
 
 var colors = document.getElementsByClassName('selector');
 
-for(i=0;i<colors.length;i++){
+for (i = 0; i < colors.length; i++) {
     let temp = '#' + colors[i].id;
-    colors[i].addEventListener('click',function(){
+    colors[i].addEventListener('click', function () {
         console.log('New color chosen');
         textColor = temp;
     })
@@ -101,4 +105,4 @@ var addText = function () {
     canvas.add(mytext);
 }
 
-document.getElementById('setText').addEventListener('click',addText);
+document.getElementById('setText').addEventListener('click', addText);
