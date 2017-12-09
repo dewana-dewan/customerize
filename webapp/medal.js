@@ -19,8 +19,8 @@ function readFile() {
             fabric.Image.fromURL(e.target.result, function (myImg) {
                 //i create an extra var for to change some image properties
                 var img1 = myImg.set({
-                    left: 0,
-                    top: 0,
+                    left: 80,
+                    top: 120,
                 });
                 canvas.add(img1);
             });
@@ -85,9 +85,6 @@ document.addEventListener("keydown", KeyCheck);
 function KeyCheck(event) {
     var KeyID = event.keyCode;
     switch (KeyID) {
-        case 8:
-            canvas.remove(canvas.getActiveObject());
-            break;
         case 46:
             canvas.remove(canvas.getActiveObject());
             break;
@@ -143,7 +140,7 @@ var changeptColor = function (x) {
     canvas.renderAll();
 };
 
-var color = '#fff';
+var color = '#D0021B';
 
 var background = new fabric.Rect({
     left: 50,

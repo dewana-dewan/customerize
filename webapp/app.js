@@ -76,7 +76,7 @@ function readFileCurved() {
                     // calculate the current offset
                     currentYOffset = 120 + (ea * x * x) + eb * x;
 
-                    context.drawImage(img,x + 40,0,1,img.height,x + 40,currentYOffset,1,img.height);
+                    context.drawImage(img,x + 30,0,1,img.height,x + 30,currentYOffset,1,img.height);
                 }
 
 

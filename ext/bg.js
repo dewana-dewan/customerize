@@ -4,14 +4,14 @@ chrome.contextMenus.create({
 });
 
 chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
-    alert(message);
+    //alert(message);
     img_recieved = message;
     updateImage(message);
 });
 
 function updateImage(msg) {
 	chrome.tabs.query({}, function(tabs) {
-		alert(tabs[0].id);
+		//alert(tabs[0].id);
 		// alert(tab.id);
 		chrome.tabs.sendMessage(
 			tabs[0].id, 
