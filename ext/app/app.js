@@ -148,3 +148,9 @@ var showvalue = function () {
 hueslider.addEventListener("change", showvalue);
 hueslider.addEventListener("mousemove", showvalue);
 
+document.getElementById('confirmbtn').addEventListener('click', function () {
+    let el = document.getElementById('dlimg');
+    el.href = document.getElementById('c').toDataURL(); // Change here
+    el.download = 'design.png';
+    localStorage.setItem("imgLink",el.href);
+});
