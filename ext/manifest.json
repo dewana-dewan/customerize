@@ -1,9 +1,11 @@
 {
     "manifest_version": 2,
-    "name": "Hello World",
+    "name": "Customerize",
     "version": "2.1",
     "icons": {
-        "16": "hello_world.png"
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
     },
     "background": {
         "scripts": ["bg.js"]

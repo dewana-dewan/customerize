@@ -4,7 +4,8 @@ body {
   background-color: #374057; }
 
 /* line 6, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
-#c, #target, .canvas-container {
+#c, #target,
+.canvas-container {
   position: absolute !important;
   top: 0;
   bottom: 0;
@@ -12,19 +13,19 @@ body {
   right: 0;
   margin: auto; }
 
-/* line 15, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+/* line 16, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
 #preview {
   display: none; }
 
-/* line 19, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+/* line 20, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
 #target {
   height: 400px; }
 
-/* line 24, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+/* line 25, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
 .hidden {
   display: none; }
 
-/* line 28, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+/* line 29, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
 #bgimage {
   position: absolute;
   right: 0;
@@ -32,7 +33,7 @@ body {
   z-index: -99999;
   height: 100vh; }
 
-/* line 36, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+/* line 37, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
 #deleteobj {
   margin: 16px 0;
   padding: 12px;
@@ -46,37 +47,46 @@ body {
   letter-spacing: 0;
   width: 100%; }
 
-/* line 50, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+/* line 51, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
 .header {
-  font-family: Metropolis-SemiBold;
-  font-size: 24px;
-  color: #FFFFFF;
-  letter-spacing: 6px;
-  text-align: center;
-  text-transform: uppercase;
-  margin-top: 24px; }
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  /* line 54, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+  .header img {
+    align-self: center;
+    margin-top: 16px; }
+  /* line 59, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+  .header h1 {
+    font-family: Metropolis-SemiBold;
+    font-size: 24px;
+    color: #FFFFFF;
+    letter-spacing: 6px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 16px; }
 
-/* line 60, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+/* line 70, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
 .content {
   text-align: center;
   margin: 0 auto;
-  margin-top: 12vw;
+  margin-top: 8vw;
   margin-left: 10vw;
   margin-right: 7vw;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center; }
-  /* line 70, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+  /* line 80, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
   .content .r0 {
     display: flex;
     flex-direction: column; }
-    /* line 73, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+    /* line 83, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
     .content .r0 .textcntrl {
       text-align: center;
       display: flex;
       flex-direction: column; }
-      /* line 77, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+      /* line 87, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
       .content .r0 .textcntrl button {
         padding: 12px;
         border-radius: 3px;
@@ -88,7 +98,7 @@ body {
         color: white;
         letter-spacing: 0;
         width: 100%; }
-      /* line 89, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+      /* line 99, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
       .content .r0 .textcntrl .font {
         margin: 16px 0;
         background-color: transparent !important;
@@ -100,19 +110,19 @@ body {
         letter-spacing: -0.5px;
         border-bottom: 1px solid #979797;
         border-radius: 0px; }
-        /* line 100, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+        /* line 110, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
         .content .r0 .textcntrl .font #rob {
           font-family: 'Roboto'; }
-        /* line 103, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+        /* line 113, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
         .content .r0 .textcntrl .font #lob {
           font-family: 'Lobster'; }
-        /* line 106, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+        /* line 116, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
         .content .r0 .textcntrl .font #air {
           font-family: 'Airstrike'; }
-        /* line 109, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+        /* line 119, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
         .content .r0 .textcntrl .font #ac {
           font-family: 'American Captain'; }
-      /* line 113, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+      /* line 123, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
       .content .r0 .textcntrl input[type="text"] {
         margin: 16px 0;
         background-color: transparent;
@@ -122,49 +132,49 @@ body {
         font-size: 14px;
         color: #fff;
         border-bottom: 1px solid #979797; }
-      /* line 123, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+      /* line 133, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
       .content .r0 .textcntrl .colors {
         display: flex;
         flex-direction: column; }
-        /* line 126, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+        /* line 136, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
         .content .r0 .textcntrl .colors .ind {
           display: flex;
           flex-direction: row;
           margin: 16px 0 16px 0;
           justify-content: space-between; }
-          /* line 131, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+          /* line 141, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
           .content .r0 .textcntrl .colors .ind div {
             box-shadow: 2px 3px 3px 0 rgba(26, 34, 54, 0.25);
             border-radius: 2px;
             height: 24px;
             width: 24px;
             cursor: pointer; }
-          /* line 138, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+          /* line 148, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
           .content .r0 .textcntrl .colors .ind #fff {
             background-color: white; }
-          /* line 141, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+          /* line 151, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
           .content .r0 .textcntrl .colors .ind .blackcolor {
             background-color: black; }
-          /* line 144, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+          /* line 154, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
           .content .r0 .textcntrl .colors .ind .bluecolor {
             background-color: #4A90E2; }
-          /* line 147, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+          /* line 157, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
           .content .r0 .textcntrl .colors .ind #D0021B {
             background-color: #D0021B; }
-          /* line 150, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+          /* line 160, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
           .content .r0 .textcntrl .colors .ind .purplecolor {
             background-color: #9013FE; }
-          /* line 153, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+          /* line 163, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
           .content .r0 .textcntrl .colors .ind #F8E71C {
             background-color: #F8E71C; }
-        /* line 157, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+        /* line 167, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
         .content .r0 .textcntrl .colors input {
           width: 100%;
           border: none;
           outline: none;
           background-color: transparent;
           margin: 0 0 16px 0; }
-    /* line 166, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+    /* line 176, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
     .content .r0 label {
       text-transform: uppercase;
       border-radius: 3px;
@@ -175,15 +185,15 @@ body {
       font-size: 16px;
       color: #FFFFFF;
       letter-spacing: 0; }
-      /* line 167, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+      /* line 177, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
       .content .r0 label img {
         margin-right: 8px;
         vertical-align: baseline; }
-  /* line 182, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+  /* line 192, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
   .content .r1 {
     width: 400px;
     height: 400px; }
-  /* line 187, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+  /* line 197, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
   .content .r2 .confirm {
     cursor: pointer;
     border: none;
