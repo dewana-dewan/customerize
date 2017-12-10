@@ -1,4 +1,6 @@
 # Customerize
+![Homepage](https://raw.githubusercontent.com/dewana-dewan/customerize/master/ext/assets/homepage.png)
+
 
 ## Customization for the customers!
 Made During [GrabOn Scripton 2017](https://hackerbay.co/user#/challenges/scripton/)
