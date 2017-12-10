@@ -323,7 +323,7 @@ body {
   cursor: -moz-grabbing; }
 
 /* line 316, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
-.head {
+.head, .link2 {
   text-align: left;
   margin-top: 12px;
   font-family: Metropolis-SemiBold;
@@ -362,5 +362,9 @@ body {
 /* line 353, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
 .somecolor {
   background-color: #DC8C5F; }
+
+/* line 357, /Users/Abhishek/Playground/scripton/customerize/ext/app/style.scss */
+.link2 {
+  font-size: 14px; }
 
 /*# sourceMappingURL=style.css.map */

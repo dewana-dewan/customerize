@@ -353,3 +353,8 @@ body {
 .somecolor{
     background-color: #DC8C5F;
 }
+
+.link2{
+    @extend .head;
+    font-size: 14px;
+}

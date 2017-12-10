@@ -4,8 +4,8 @@ var fontName = 'Roboto';
 var canvas = new fabric.Canvas('c');
 canvas.backgroundColor = 'white';
 
-$( document ).ready(function() {
-    addFigureine();
+$(document).ready(function () {
+    addArchery();
 });
 
 //add the subordinate images
@@ -119,35 +119,36 @@ hueslider.addEventListener("mousemove", showvalue);
 
 //trophy name update
 
-fabric.loadSVGFromURL("plate.svg", function (objects, options) {
+fabric.loadSVGFromURL("plate1.svg", function (objects, options) {
 
-    var loadedObjects1 = fabric.util.groupSVGElements(objects, options);
+    var plate1 = fabric.util.groupSVGElements(objects, options);
 
-    loadedObjects1.set({
-        top: 320,
+    plate1.set({
+        top: 340,
         left: 80,
-        scaleX: 0.8,
-        scaleY: 0.8,
+        scaleX: 0.5,
+        scaleY: 0.5,
+        fill: 'black',
         lockMovementX: true,
         lockMovementY: true,
         hoverCursor: 'arrow',
         selectable: false
     });
 
-    canvas.add(loadedObjects1);
+    canvas.add(plate1);
     canvas.renderAll();
-    canvas.sendToBack(loadedObjects1);
+    canvas.sendToBack(plate1);
 });
 
-var loadedObjects2;
-fabric.loadSVGFromURL("base.svg", function (objects, options) {
+var base1;
+fabric.loadSVGFromURL("base1.svg", function (objects, options) {
 
-    loadedObjects2 = fabric.util.groupSVGElements(objects, options);
-    loadedObjects2.set({
-        top: 262,
+    base1 = fabric.util.groupSVGElements(objects, options);
+    base1.set({
+        top: 295,
         left: 80,
-        scaleX: 0.8,
-        scaleY: 0.8,
+        scaleX: 0.5,
+        scaleY: 0.5,
         fill: '#F5CF00',
         lockMovementX: true,
         lockMovementY: true,
@@ -155,20 +156,85 @@ fabric.loadSVGFromURL("base.svg", function (objects, options) {
         selectable: false
     });
 
-    canvas.add(loadedObjects2);
+    canvas.add(base1);
     canvas.renderAll();
-    canvas.sendToBack(loadedObjects2);
+    canvas.sendToBack(base1);
 });
 
 
-fabric.loadSVGFromURL("stand.svg", function (objects, options) {
+fabric.loadSVGFromURL("plate2.svg", function (objects, options) {
 
-    loadedObjects3 = fabric.util.groupSVGElements(objects, options);
-    loadedObjects3.set({
-        top: 160,
-        left: 165,
-        scaleX: 0.8,
-        scaleY: 0.8,
+    var plate2 = fabric.util.groupSVGElements(objects, options);
+
+    plate2.set({
+        top: 200,
+        left: 80,
+        scaleX: 0.5,
+        scaleY: 0.5,
+        fill: 'black',
+        lockMovementX: true,
+        lockMovementY: true,
+        hoverCursor: 'arrow',
+        selectable: false
+    });
+
+    canvas.add(plate2);
+    canvas.renderAll();
+    canvas.sendToBack(plate2);
+});
+
+fabric.loadSVGFromURL("poll1.svg", function (objects, options) {
+
+    poll1 = fabric.util.groupSVGElements(objects, options);
+    poll1.set({
+        top: 200,
+        left: 140,
+        scaleX: 0.5,
+        scaleY: 0.5,
+        fill: '#DC8C5F',
+        lockMovementX: true,
+        lockMovementY: true,
+        hoverCursor: 'arrow',
+        selectable: false
+    });
+
+    canvas.add(poll1);
+    canvas.renderAll();
+    canvas.sendToBack(poll1);
+});
+
+
+fabric.loadSVGFromURL("poll2.svg", function (objects, options) {
+
+    poll2 = fabric.util.groupSVGElements(objects, options);
+    poll2.set({
+        top: 200,
+        left: 230,
+        scaleX: 0.5,
+        scaleY: 0.5,
+        fill: '#DC8C5F',
+        lockMovementX: true,
+        lockMovementY: true,
+        hoverCursor: 'arrow',
+        selectable: false
+    });
+
+    canvas.add(poll2);
+    canvas.renderAll();
+    canvas.sendToBack(poll2);
+});
+
+
+
+var base2;
+fabric.loadSVGFromURL("base2.svg", function (objects, options) {
+
+    base2 = fabric.util.groupSVGElements(objects, options);
+    base2.set({
+        top: 156,
+        left: 80,
+        scaleX: 0.5,
+        scaleY: 0.5,
         fill: '#F5CF00',
         lockMovementX: true,
         lockMovementY: true,
@@ -176,43 +242,91 @@ fabric.loadSVGFromURL("stand.svg", function (objects, options) {
         selectable: false
     });
 
-    canvas.add(loadedObjects3);
+    canvas.add(base2);
     canvas.renderAll();
-    canvas.sendToBack(loadedObjects3);
+    canvas.sendToBack(base2);
 });
 
-var trophyCaption = new fabric.IText('GRAB ON SCRIPTON', {
-    top: 340,
+
+fabric.loadSVGFromURL("poll3.svg", function (objects, options) {
+
+    poll3 = fabric.util.groupSVGElements(objects, options);
+    poll3.set({
+        top: 120,
+        left: 180,
+        scaleX: 0.5,
+        scaleY: 0.5,
+        fill: '#DC8C5F',
+        lockMovementX: true,
+        lockMovementY: true,
+        hoverCursor: 'arrow',
+        selectable: false
+    });
+
+    canvas.add(poll3);
+    canvas.renderAll();
+    canvas.sendToBack(poll3);
+});
+
+var trophyBCaption = new fabric.IText('JOHN CENA', {
+    top: 350,
     left: 130,
     fill: 'white',
-    fontSize: 16,
-    fontFamily: 'Roboto' 
-});
-
-canvas.add(trophyCaption);
-
-canvas.bringToFront(trophyCaption);
-
-
-
-var standText = new fabric.IText('2\n0\n1\n7\n', {
-    top: 170,
-    left: 190,
-    fill: 'black',
-    fontSize: 12,
+    fontSize: 24,
     fontFamily: 'Roboto'
 });
 
-canvas.add(standText);
+canvas.add(trophyBCaption);
 
-canvas.bringToFront(standText);
+canvas.bringToFront(trophyBCaption);
+
+var trophyTCaption = new fabric.IText('HEAVYWEIGHT CHAMPION', {
+    top: 210,
+    left: 100,
+    fill: 'white',
+    fontSize: 16,
+    fontFamily: 'Roboto'
+});
+
+canvas.add(trophyTCaption);
+
+canvas.bringToFront(trophyTCaption);
+
+
+
+var standText1 = new fabric.IText('R\nA\nW\n', {
+    top: 248,
+    left: 242,
+    fill: 'black',
+    fontSize: 10,
+    fontFamily: 'Roboto'
+});
+
+canvas.add(standText1);
+
+canvas.bringToFront(standText1);
+
+
+var standText2 = new fabric.IText('W\nW\nE\n', {
+    top: 248,
+    left: 150,
+    fill: 'black',
+    fontSize: 10,
+    fontFamily: 'Roboto'
+});
+
+canvas.add(standText2);
+
+canvas.bringToFront(standText2);
 
 
 
 
-var changebColor = function (x) {
-    fabric.loadSVGFromURL("base.svg", function (objects, options) {
-        loadedObjects2.set({
+
+
+var changeb1Color = function (x) {
+    fabric.loadSVGFromURL("base1.svg", function (objects, options) {
+        base1.set({
             fill: '#' + x,
         });
         canvas.renderAll();
@@ -220,24 +334,50 @@ var changebColor = function (x) {
     });
 }
 
-var changesColor = function (x) {
-    fabric.loadSVGFromURL("stand.svg", function (objects, options) {
-        loadedObjects3.set({
+var changeb2Color = function (x) {
+    fabric.loadSVGFromURL("base2.svg", function (objects, options) {
+        base2.set({
             fill: '#' + x,
         });
-        canvas.sendToBack(loadedObjects3);
         canvas.renderAll();
 
     });
 }
 
+var changes1Color = function (x) {
+    fabric.loadSVGFromURL("poll1.svg", function (objects, options) {
+        poll1.set({
+            fill: '#' + x,
+        });
+        canvas.sendToBack(poll1);
+
+        fabric.loadSVGFromURL("poll2.svg", function (objects, options) {
+            poll2.set({
+                fill: '#' + x,
+            });
+            canvas.sendToBack(poll2);
+            canvas.renderAll();
+
+        });
+    });
+}
+var changes2Color = function (x) {
+    fabric.loadSVGFromURL("poll3.svg", function (objects, options) {
+        poll3.set({
+            fill: '#' + x,
+        });
+        canvas.sendToBack(poll3);
+        canvas.renderAll();
+
+    });
+}
 
 var addArchery = function () {
     fabric.Image.fromURL('trophies/archery.png', function (myImg) {
         //i create an extra var for to change some image properties
         var archery = myImg.set({
             left: 165,
-            top: 45,
+            top: 10,
             scaleX: 0.4,
             scaleY: 0.4
         });
@@ -252,7 +392,7 @@ var addFigureine = function () {
         //i create an extra var for to change some image properties
         var figureine = myImg.set({
             left: 162,
-            top: 52,
+            top: 12,
             scaleX: 0.3,
             scaleY: 0.3
         });
@@ -266,10 +406,10 @@ var addBoat = function () {
     fabric.Image.fromURL('trophies/boat.png', function (myImg) {
         //i create an extra var for to change some image properties
         var boat = myImg.set({
-            left: 140,
-            top: 105,
-            scaleX: 0.7,
-            scaleY: 0.7
+            left: 145,
+            top: 75,
+            scaleX: 0.6,
+            scaleY: 0.6
         });
         canvas.bringToFront(boat);
         canvas.add(boat);
@@ -281,8 +421,8 @@ var addCar = function () {
     fabric.Image.fromURL('trophies/car.png', function (myImg) {
         //i create an extra var for to change some image properties
         var car = myImg.set({
-            left: 160,
-            top: 45,
+            left: 165,
+            top: 10,
             scaleX: 0.5,
             scaleY: 0.5
         });
@@ -296,7 +436,7 @@ var addMagic = function () {
         //i create an extra var for to change some image properties
         var magic = myImg.set({
             left: 170,
-            top: 50,
+            top: 12,
             scaleX: 0.5,
             scaleY: 0.5
         });
@@ -310,7 +450,7 @@ var addVolleyball = function () {
         //i create an extra var for to change some image properties
         var volleyball = myImg.set({
             left: 175,
-            top: 45,
+            top: 10,
             scaleX: 0.5,
             scaleY: 0.5
         });
@@ -343,4 +483,3 @@ document.getElementById('trophyType').addEventListener('change', function () {
             break;
     }
 });
-
