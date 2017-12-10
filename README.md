@@ -26,7 +26,7 @@ Customerize Allows the customers to customize there apparels and products! It ex
 ![](https://raw.githubusercontent.com/dewana-dewan/customerize/master/ext/assets/double-trophy.png)
 
 ## Technologies Used
-[Fabric.js](https://www/fabricjs.com), [SASS](http://sass-lang.com/) and ❤️
+[Fabric.js](http://fabricjs.com/), [SASS](http://sass-lang.com/) and ❤️
 
 and in case you missed it, here's our 404 page 😁
 ![404 page](https://raw.githubusercontent.com/dewana-dewan/customerize/master/ext/assets/404.png)
