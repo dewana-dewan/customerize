@@ -473,14 +473,14 @@ var CurvedText = (function () {
 
 
     CurvedText.defaults = {
-        top: 200,
+        top: 225,
         fontFamily: 'Metropolis Bold',
-        left: 50,
+        left: 33,
         scaleX: 1,
         scaleY: 1,
         angle: 0,
         spacing: 4,
-        radius: 230,
+        radius: 280,
         text: 'Curved text',
         align: 'center',
         reverse: true,
