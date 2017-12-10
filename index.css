@@ -1,3 +1,4 @@
+/* line 1, /Users/Abhishek/Playground/scripton/customerize/index.scss */
 html,
 body,
 div,
@@ -87,6 +88,7 @@ video {
   vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
+/* line 93, /Users/Abhishek/Playground/scripton/customerize/index.scss */
 article,
 aside,
 details,
@@ -100,53 +102,66 @@ nav,
 section {
   display: block; }
 
+/* line 107, /Users/Abhishek/Playground/scripton/customerize/index.scss */
 body {
   line-height: 1; }
 
+/* line 111, /Users/Abhishek/Playground/scripton/customerize/index.scss */
 ol,
 ul {
   list-style: none; }
 
+/* line 116, /Users/Abhishek/Playground/scripton/customerize/index.scss */
 blockquote,
 q {
   quotes: none; }
 
+/* line 122, /Users/Abhishek/Playground/scripton/customerize/index.scss */
 blockquote:before, blockquote:after {
   content: '';
   content: none; }
 
+/* line 130, /Users/Abhishek/Playground/scripton/customerize/index.scss */
 q:before, q:after {
   content: '';
   content: none; }
 
+/* line 137, /Users/Abhishek/Playground/scripton/customerize/index.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/* line 142, /Users/Abhishek/Playground/scripton/customerize/index.scss */
 body {
   background: #0E7BF3; }
 
+/* line 146, /Users/Abhishek/Playground/scripton/customerize/index.scss */
 .header {
   background-color: white;
   height: 72px;
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
+  /* line 152, /Users/Abhishek/Playground/scripton/customerize/index.scss */
   .header .name {
     display: flex;
     flex-direction: row; }
+    /* line 155, /Users/Abhishek/Playground/scripton/customerize/index.scss */
     .header .name img {
       height: 36px; }
+    /* line 158, /Users/Abhishek/Playground/scripton/customerize/index.scss */
     .header .name h1 {
       font-family: Metropolis-Bold;
       font-size: 30px;
       color: #209CFF;
       text-transform: uppercase;
       letter-spacing: 1.5px; }
+  /* line 166, /Users/Abhishek/Playground/scripton/customerize/index.scss */
   .header .link {
     margin: 24px;
     display: flex;
     flex-direction: row; }
+    /* line 170, /Users/Abhishek/Playground/scripton/customerize/index.scss */
     .header .link a {
       text-decoration: none;
       font-family: Metropolis-Bold;
@@ -154,9 +169,11 @@ body {
       color: #0E7BF3;
       text-transform: uppercase;
       letter-spacing: 1px; }
+      /* line 177, /Users/Abhishek/Playground/scripton/customerize/index.scss */
       .header .link a:hover {
         color: #209CFF; }
 
+/* line 184, /Users/Abhishek/Playground/scripton/customerize/index.scss */
 .pattern {
   position: absolute;
   z-index: -1;
@@ -166,15 +183,18 @@ body {
   background-blend-mode: multiply;
   opacity: 0.5; }
 
+/* line 194, /Users/Abhishek/Playground/scripton/customerize/index.scss */
 .content {
   z-index: 9999;
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
+  /* line 199, /Users/Abhishek/Playground/scripton/customerize/index.scss */
   .content .about {
     margin-top: 120px;
     display: flex;
     flex-direction: column; }
+    /* line 203, /Users/Abhishek/Playground/scripton/customerize/index.scss */
     .content .about h2 {
       font-family: Metropolis-Bold;
       font-size: 48px;
@@ -182,24 +202,33 @@ body {
       letter-spacing: 0;
       line-height: 64px;
       margin-bottom: 32px; }
+    /* line 211, /Users/Abhishek/Playground/scripton/customerize/index.scss */
     .content .about h3 {
       font-family: Metropolis-Light;
       font-size: 24px;
       color: #FFFFFF;
       letter-spacing: 0; }
 
+/* line 220, /Users/Abhishek/Playground/scripton/customerize/index.scss */
 .explore {
   align-self: flex-start;
   font-family: Metropolis-ExtraBold;
   font-size: 24px;
   border-radius: 50px;
+  transition: all 0.25s ease-in-out;
   border: none;
   color: #0879F6;
   letter-spacing: 0;
   padding: 12px 36px;
   background-color: #fff;
   cursor: pointer; }
+  /* line 232, /Users/Abhishek/Playground/scripton/customerize/index.scss */
   .explore:focus {
     outline: none; }
+  /* line 235, /Users/Abhishek/Playground/scripton/customerize/index.scss */
+  .explore:hover {
+    transform: scale(1.05);
+    background-color: #f28678;
+    color: white; }
 
 /*# sourceMappingURL=index.css.map */

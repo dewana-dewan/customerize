@@ -222,7 +222,7 @@ body {
     font-family: Metropolis-ExtraBold;
     font-size: 24px;
     border-radius: 50px;
- 
+    transition: all 0.25s ease-in-out;
     border: none;
     color: #0879F6;
     letter-spacing: 0;
@@ -231,5 +231,10 @@ body {
     cursor: pointer;
     &:focus{
         outline: none;
+    }
+    &:hover{
+        transform: scale(1.05);
+        background-color: #f28678;
+        color: white;
     }
 }
