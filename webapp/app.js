@@ -270,8 +270,8 @@ var CurvedText = (function () {
 
         this.canvas = canvas;
         this.group = new fabric.Group([], {
-            selectable: true,
-            active: true
+            selectable: true
+            // active: true
         });
         this.opts.fontFamily = options.fontFamily;
         this.opts.fill = options.fill;
@@ -451,7 +451,8 @@ var CurvedText = (function () {
                 this.group.item(i).set('top', (-Math.cos(angleRadians) * this.opts.radius));
                 this.group.item(i).set('left', (Math.sin(angleRadians) * this.opts.radius));
             }
-            this.group.item(i).setAngle(curAngle);
+            // this.group.item(i).setAngle(curAngle);
+            this.group.item(i).set('skewY', -4*(i - this.group.size()/2));
         }
 
         // Update group coords
@@ -479,8 +480,8 @@ var CurvedText = (function () {
         scaleX: 1,
         scaleY: 1,
         angle: 0,
-        spacing: 4,
-        radius: 280,
+        spacing: 3,
+        radius: 380,
         text: 'Curved text',
         align: 'center',
         reverse: true,
