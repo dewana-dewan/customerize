@@ -1,7 +1,7 @@
 <a target="_blank" href="https://chrome.google.com/webstore/detail/nmfpplkdkcbhediajmbhljkafnlahcda">![Try it now in CWS](https://raw.github.com/GoogleChrome/chrome-app-samples/master/tryitnowbutton.png "Click here to install this sample from the Chrome Web Store")</a>
 
 
-# Hello World
+# Customerize
 
 This is a starter application. It contains a basic manifest file with no
 additional permissions. The manifest denotes a background script, main.js,
